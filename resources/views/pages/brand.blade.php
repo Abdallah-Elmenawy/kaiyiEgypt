@@ -11,8 +11,8 @@
     <!-- hero Section -->
     <section class="brand section light-background" id="brand">
         <div class="container text-center text-md-center py-5">
-            <h1 class="display-4">Show Of The Real Me</h1>
-            <p class="lead">Smart Multi Screen Suv</p>
+            <h1 class="display-4">{{ trans('brand.show_real') }}</h1>
+            <p class="lead">{{ trans('brand.smart_multi') }}</p>
         </div>
 
     </section>
@@ -28,7 +28,7 @@
                     <!-- Search Widget -->
                     <div class="search-widget widget-item">
 
-                        <h3 class="widget-title">Kaiyi</h3>
+                        <h3 class="widget-title">{{ trans('brand.widger_kaiyi') }}</h3>
 
                     </div><!--/Search Widget -->
 
@@ -40,23 +40,23 @@
                     <div class="recent-posts-widget widget-item">
 
                         <div class="post-item">
-                            <h4>K:   Kind Brand</h4>
+                            <h4>{{ trans('brand.kind_brand') }}</h4>
                         </div><!-- End recent post item-->
 
                         <div class="post-item">
-                            <h4>A:   Affordable Product</h4>
+                            <h4>{{ trans('brand.affordable_product') }}</h4>
                         </div><!-- End recent post item-->
 
                         <div class="post-item">
-                            <h4>I:   Innovative Concept</h4>
+                            <h4>{{ trans('brand.innovative_concept') }}</h4>
                         </div><!-- End recent post item-->
 
                         <div class="post-item">
-                            <h4>Y:   Young Us</h4>
+                            <h4>{{ trans('brand.young_us') }}</h4>
                         </div><!-- End recent post item-->
 
                         <div class="post-item">
-                            <h4>I:   Intelligent Platform</h4>
+                            <h4>   {{ trans('brand.intelligent_platfrom') }}</h4>
                         </div><!-- End recent post item-->
 
                     </div><!--/Recent Posts Widget -->
@@ -95,7 +95,7 @@
                     <!-- Search Widget -->
                     <div class="search-widget widget-item">
 
-                        <h3 class="widget-title">Meaning of Brand Logo</h3>
+                        <h3 class="widget-title">{{ trans('brand.brand_logo') }}</h3>
 
                     </div><!--/Search Widget -->
 
@@ -107,10 +107,7 @@
                     <div class="recent-posts-widget widget-item">
 
                         <div class="post-item">
-                            <h3>The V-shape stands for victory and value.
-                                It shows that giving value to customers and society gives Kaiyi a meaning. 
-                                The wings on the sides represent going higher and further, and show Kaiyi’s plans to 
-                                do well and grow.
+                            <h3>{{ trans('brand.shape_stand') }}
                             </h3>
                         </div><!-- End recent post item-->
 

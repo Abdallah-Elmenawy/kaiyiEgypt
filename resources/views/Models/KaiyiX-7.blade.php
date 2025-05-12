@@ -8,8 +8,8 @@
 @endsection
 
 @section('content')
-    <!-- hero Section -->
-    <section class="modelsxthteer section light-background" id="modelsxthteer">
+    <!-- hero Section X7 -->
+    <section class="modelsxseven section light-background" id="modelsxseven">
         <div class="container text-center text-md-center py-5">
         </div>
     </section>
@@ -21,7 +21,7 @@
                 <section id="blog-details" class="blog-details section">
                     <div class="container">
                         <div class="content" data-aos="fade-right" data-aos-duration="1000">
-                            <img src="{{ asset('assets/img/kia/models/2.png') }}" class="img-fluid" alt="">
+                            <img src="{{ asset('assets/img/kia/models/Kaiyi-X7.png') }}" class="img-fluid" alt="">
                         </div><!-- End post content -->
                     </div>
                 </section><!-- /Blog Details Section -->
@@ -29,7 +29,7 @@
 
             <div class="col-lg-6 sidebar">
 
-                <div class="modelsxthteer-container" data-aos="fade-left" data-aos-duration="1000">
+                <div class="modelsxseven-container" data-aos="fade-left" data-aos-duration="1000">
 
 
                     <!-- Search Widget -->
@@ -41,7 +41,7 @@
 
                 </div>
 
-                <div class="modelsxthteer-container" data-aos="fade-left" data-aos-duration="2000">
+                <div class="modelsxseven-container" data-aos="fade-left" data-aos-duration="2000">
 
                     <!-- Recent Posts Widget -->
                     <div class="recent-posts-widget widget-item">
@@ -79,13 +79,12 @@
         </div>
     </div>
 
-    <section class="modelsxthteer section light-background" id="modelsxthteer">
+    <section class="modelsxseven section light-background" id="modelsxthteer">
         <div class="container col-lg-6 col-md-6 text-center text-md-center py-5">
-            <h2 class="section-title">Comfort More</h2>
-            <p class="section-subtitle">60:40 seat split</p>
-            <p class="section-subtitle">Flexible storage space</p>
-            <p class="section-subtitle">2632mm super long wheelbase</p>
-            <p class="section-subtitle">Luxury soft-touch instrument panels</p>
+            <h2 class="section-title">Feel Comfort</h2>
+            <p class="section-subtitle">Enveloping space capsule</p>
+            <p class="section-subtitle">64 colors colorful rhythm atmosphere lights</p>
+            <p class="section-subtitle">Easy to drive on life road</p>
         </div>
 
     </section>
@@ -94,7 +93,7 @@
         <div class="row">
             <div class="col-lg-12 col-md-12  sidebar">
 
-                <div class="modelsxthteer-container" data-aos="fade-left" data-aos-duration="1000">
+                <div class="modelsxseven-container" data-aos="fade-left" data-aos-duration="1000">
 
 
                     <!-- Search Widget -->
@@ -112,28 +111,34 @@
                 <section id="blog-details" class="blog-details section">
                     <div class="container">
                         <div class="content" data-aos="fade-right" data-aos-duration="1000">
-                            <img src="{{ asset('assets/img/kia/models/2.png') }}" class="img-fluid" alt="">
+                            <img src="{{ asset('assets/img/kia/models/Kaiyi-X7.png') }}" class="img-fluid" alt="">
                         </div><!-- End post content -->
                     </div>
-                    <div class="modelsxthteer-container" data-aos="fade-right" data-aos-duration="2000">
+                    <div class="modelsxseven-container" data-aos="fade-right" data-aos-duration="2000">
 
                         <!-- Recent Posts Widget -->
                         <div class="recent-posts-widget widget-item">
     
                             <div class="post-item">
-                                <h4>- Length*Width*Height(mm) <br>: 4400*1831*1653</h4>
+                                <h4>- Fuel tank volume (L) <br>: 60</h4>
                             </div><!-- End recent post item-->
     
                             <div class="post-item">
-                                <h4>- Wheelbase  : 2632 </h4>
+                                <h4>- Displacement(mL)  : 1598 </h4>
                             </div><!-- End recent post item-->
     
                             <div class="post-item">
-                                <h4>- Minimum ground clearance (mm) : 158</h4>
+                                <h4>- Maximum power (kW) : 145</h4>
                             </div><!-- End recent post item-->
     
                             <div class="post-item">
-                                <h4>- Body structureSUV : (5 Doors and 5 seats)</h4>
+                                <h4>- Engine speed at max power (rpm) : 2000~4000 </h4>
+                            </div><!-- End recent post item-->
+                            <div class="post-item">
+                                <h4>- Emission standard : China VI </h4>
+                            </div><!-- End recent post item-->
+                            <div class="post-item">
+                                <h4>- Transmission type	 : 7 DCT </h4>
                             </div><!-- End recent post item-->
     
                         </div><!--/Recent Posts Widget -->
@@ -145,33 +150,33 @@
 
             <div class="col-lg-6 col-md-6 sidebar">
 
-                <div class="modelsxthteer-container" data-aos="fade-left" data-aos-duration="2000">
+                <div class="modelsxseven-container" data-aos="fade-left" data-aos-duration="2000">
 
                     <!-- Recent Posts Widget -->
                     <div class="recent-posts-widget widget-item">
+
+                        <div class="post-item">
+                            <h4>- Length : 4,738 mm</h4>
+                        </div><!-- End recent post item-->
+
+                        <div class="post-item">
+                            <h4>- Width : 2,820 mm</h4>
+                        </div><!-- End recent post item-->
 
                         <div class="post-item">
                             <h4>- Seats number : 5</h4>
                         </div><!-- End recent post item-->
 
                         <div class="post-item">
-                            <h4>- Fuel tank capacity(L) : 51</h4>
+                            <h4>- Front/Rear wheelbase (mm) : 1652</h4>
                         </div><!-- End recent post item-->
 
                         <div class="post-item">
-                            <h4>- Engine type : SQRE4G15C</h4>
-                        </div><!-- End recent post item-->
-
-                        <div class="post-item">
-                            <h4>- Displacement(ml) : 1499</h4>
-                        </div><!-- End recent post item-->
-
-                        <div class="post-item">
-                            <h4>- Maximum horsepower (Ps) : 116</h4>
+                            <h4>- Minimum ground clearance : 158 mm</h4>
                         </div><!-- End recent post item-->
                         
                         <div class="post-item">
-                            <h4>- Maximum power (kW)/Maximum power<br> speed (RPM) : 85/6150</h4>
+                            <h4>- Body structure : SUV (5 doors and 5 seats)</h4>
                         </div><!-- End recent post item-->
 
                     </div><!--/Recent Posts Widget -->
@@ -184,7 +189,7 @@
         </div>
     </div>
 
-    <section class="modelsxthteer section light-background" id="modelsxthteer">
+    <section class="modelsxsevenFo section light-background" id="modelsxthteer">
         <div class="container text-center text-md-center py-5">
 
         </div>

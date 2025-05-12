@@ -1,45 +1,56 @@
 
 document.addEventListener("DOMContentLoaded", function () {
-  const carousel = document.getElementById("hero-carousel");
-  const video = document.getElementById("heroVideo");
+    const toggles = document.querySelectorAll(".fa-caret-down");
 
-  // استماع إلى حدث "slid.bs.carousel" الذي يتم تشغيله عند الانتقال إلى شريحة جديدة
-  carousel.addEventListener("slid.bs.carousel", function (event) {
-    const activeSlide = event.relatedTarget; // الشريحة النشطة حاليًا
-
-    // إذا كانت الشريحة النشطة تحتوي على الفيديو
-    if (activeSlide.contains(video)) {
-      video.play(); // تشغيل الفيديو
-    }
-  });
-
-  // استماع إلى حدث انتهاء الفيديو
-  video.addEventListener("ended", function () {
-    const carouselInstance = bootstrap.Carousel.getInstance(carousel);
-    carouselInstance.next(); // الانتقال إلى الشريحة التالية بعد انتهاء الفيديو
-  });
-});
-document.addEventListener('DOMContentLoaded', function () {
-  // تحديد جميع العناصر التي تحتوي على التأثير
-  const elements = document.querySelectorAll('.animate-slide-in');
-
-  // إعداد Intersection Observer
-  const observer = new IntersectionObserver((entries) => {
-    entries.forEach(entry => {
-      if (entry.isIntersecting) {
-        entry.target.classList.add('animate-slide-in-active'); // تفعيل التأثير
-        observer.unobserve(entry.target); // إيقاف المراقبة بعد تشغيل التأثير
-      }
+    toggles.forEach(toggle => {
+      toggle.addEventListener("click", function (e) {
+        e.preventDefault(); // منع التحويل للرابط #
+        const dropdownLi = this.closest("li.dropdown");
+        // dropdownLi.classList.toggle("dropdown-active");
+      });
     });
-  }, {
-    threshold: 0.5 // نسبة ظهور العنصر في الشاشة (50%)
   });
+// document.addEventListener("DOMContentLoaded", function () {
+//   const carousel = document.getElementById("hero-carousel");
+//   const video = document.getElementById("heroVideo");
 
-  // مراقبة العناصر
-  elements.forEach(element => {
-    observer.observe(element);
-  });
-});
+//   // استماع إلى حدث "slid.bs.carousel" الذي يتم تشغيله عند الانتقال إلى شريحة جديدة
+//   carousel.addEventListener("slid.bs.carousel", function (event) {
+//     const activeSlide = event.relatedTarget; // الشريحة النشطة حاليًا
+
+//     // إذا كانت الشريحة النشطة تحتوي على الفيديو
+//     if (activeSlide.contains(video)) {
+//       video.play(); // تشغيل الفيديو
+//     }
+//   });
+
+//   // استماع إلى حدث انتهاء الفيديو
+//   video.addEventListener("ended", function () {
+//     const carouselInstance = bootstrap.Carousel.getInstance(carousel);
+//     carouselInstance.next(); // الانتقال إلى الشريحة التالية بعد انتهاء الفيديو
+//   });
+// });
+// document.addEventListener('DOMContentLoaded', function () {
+//   // تحديد جميع العناصر التي تحتوي على التأثير
+//   const elements = document.querySelectorAll('.animate-slide-in');
+
+//   // إعداد Intersection Observer
+//   const observer = new IntersectionObserver((entries) => {
+//     entries.forEach(entry => {
+//       if (entry.isIntersecting) {
+//         entry.target.classList.add('animate-slide-in-active'); // تفعيل التأثير
+//         observer.unobserve(entry.target); // إيقاف المراقبة بعد تشغيل التأثير
+//       }
+//     });
+//   }, {
+//     threshold: 0.5 // نسبة ظهور العنصر في الشاشة (50%)
+//   });
+
+//   // مراقبة العناصر
+//   elements.forEach(element => {
+//     observer.observe(element);
+//   });
+// });
 (function() {
   "use strict";
 

@@ -1,0 +1,25 @@
+<?php
+
+return [
+    'service' => 'Service',
+    'booking' => 'Booking',
+    'kaiyi_understsand' => 'At Kaiyi, we understand the importance of keeping your car in top-notch condition. That’s why we have streamlined our service booking process to ensure it’s as convenient as possible for our valued customers. Whether it’s regular maintenance, a minor repair, or a comprehensive service, booking an appointment with us is quick, easy, and hassle-free.',
+    'full_name' => 'Full Name',
+    'type_full_name' => 'Type your full name',
+    'phone' => 'Phone',
+    'type_your_phone' => 'Type your phone',
+    'email' => 'Email',
+    'select_car_model' => 'Select car model',
+    'select' => 'Select',
+    'x3' => 'X-3',
+    'x3pro' => 'X-3 pro',
+    'x7' => 'X-7',
+    'date' => 'Date',
+    'number_plate' => 'Number Plate',
+    'type_here_numper' => 'Type here',
+    'enquire_now' => 'Enquire Now',
+    'center' => 'Center',
+    'legend_automobile' => 'Legend World Automobile Service',
+    'title' => 'First Industrial Zone Street - October 40',
+    'email_ser' => 'Email : info@kaiyimotoregypt.com',
+];

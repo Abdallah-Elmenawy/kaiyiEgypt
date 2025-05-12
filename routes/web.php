@@ -1,71 +1,77 @@
 <?php
 
+use App\Http\Controllers\BookingRequestController;
+use App\Http\Controllers\CarController;
+use App\Http\Controllers\ContactUsController;
+use App\Http\Controllers\InstallmentPaymentsController;
 use Illuminate\Support\Facades\Route;
+use Mcamara\LaravelLocalization\Facades\LaravelLocalization;
+use App\Http\Controllers\ServicBookingController;
+Route::group(
+    [
+        'prefix' => LaravelLocalization::setLocale(), 
+        'middleware' => ['localeSessionRedirect', 'localizationRedirect', 'localeViewPath']
+    ],  function () {
+            Route::get('/empty', function () {
+                return view('pages.empty');
+            });
 
-/*
-|--------------------------------------------------------------------------
-| Web Routes
-|--------------------------------------------------------------------------
-|
-| Here is where you can register web routes for your application. These
-| routes are loaded by the RouteServiceProvider within a group which
-| contains the "web" middleware group. Now create something great!
-|
-*/
-Route::group([], function () {
-    Route::get('/', function () {
-        return view('home');
-    });
+            Route::get('/customer-service', function () {
+                return view('pages.customer-service');
+            });
 
-    Route::get('/home', function () {
-        return view('home');
-    });
+            Route::get('/warranty', function () {
+                return view('pages.warranty');
+            });
 
-    Route::get('/empty', function () {
-        return view('pages.empty');
-    });
+            Route::get('/contact-us', function () {
+                return view('pages.contact-us');
+            });
 
-    Route::get('/customer-service', function () {
-        return view('pages.customer-service');
-    });
+            Route::get('/about-us', function () {
+                return view('pages.about-us');
+            });
 
-    Route::get('/warranty', function () {
-        return view('pages.warranty');
-    });
+            Route::get('/brand', function () {
+                return view('pages.brand');
+            });
 
-    Route::get('/contact-us', function () {
-        return view('pages.contact-us');
-    });
+            Route::get('/service-booking', function () {
+                return view('pages.service-booking');
+            });
 
-    Route::get('/about-us', function () {
-        return view('pages.about-us');
-    });
+            Route::get('/test-drive', function () {
+                return view('pages.test-drive');
+            });
 
-    Route::get('/brand', function () {
-        return view('pages.brand');
-    });
+            Route::get('/request-quote', function () {
+                return view('pages.request-quote');
+            });
 
-    Route::get('/service-booking', function () {
-        return view('pages.service-booking');
-    });
+            Route::get('/Kaiyi-X-3', function () {
+                return view('Models.KaiyiX-3');
+            });
 
-    Route::get('/test-drive', function () {
-        return view('pages.test-drive');
-    });
+            Route::get('/Kaiyi-X-3-Pro', function () {
+                return view('Models.KaiyiX-3Pro');
+            });
 
-    Route::get('/request-quote', function () {
-        return view('pages.request-quote');
-    });
-    Route::get('/Kaiyi-X-3', function () {
-        return view('Models.KaiyiX-3');
-    });
-    Route::get('/Kaiyi-X-3-Pro', function () {
-        return view('Models.KaiyiX-3Pro');
-    });
-    Route::get('/Kaiyi-E-5', function () {
-        return view('Models.KaiyiE-5');
-    });
-    Route::get('/Kaiyi-X-7', function () {
-        return view('Models.KaiyiX-7');
-    });
-});
+            Route::get('/Kaiyi-E-5', function () {
+                return view('Models.KaiyiE-5');
+            });
+
+            Route::get('/Kaiyi-X-7', function () {
+                return view('Models.KaiyiX-7');
+            });
+
+            Route::get('/', [CarController::class, 'index']);
+            Route::get('/home', [CarController::class, 'index']);
+            Route::get('/home/{slug}', [CarController::class, 'show'])->name('home.show');
+
+            Route::post('/booking-request', [BookingRequestController::class, 'store'])->name('booking.store');
+            Route::post('/installment', [InstallmentPaymentsController::class, 'store'])->name('installment.store');
+            Route::post('/contact-us', [ContactUsController::class, 'store'])->name('contact-us.store');
+            Route::get('/servic-booking', [ServicBookingController::class, 'create'])->name('servic-booking.create');
+            Route::post('/servic-booking', [ServicBookingController::class, 'store'])->name('servic-booking.store');
+        }
+);

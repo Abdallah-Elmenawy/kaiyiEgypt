@@ -17,12 +17,10 @@
 
                 <div class="col-lg-12 col-md-12" data-aos="fade-up" data-aos-delay="100">
                     <div class="feature-service">
-                        <h3><span> Service</span> Booking</h3>
-                        <P>At Kaiyi, we understand the importance of keeping your car in top-notch condition.
-                            That’s why we have streamlined our service booking process to ensure it’s as convenient as
-                            possible
-                            for our valued customers. Whether it’s regular maintenance, a minor repair,
-                            or a comprehensive service, booking an appointment with us is quick, easy, and hassle-free.</P>
+                        <h3><span>{{ trans('service-booking.service') }}</span> {{ trans('service-booking.booking') }}</h3>
+                        <P>
+                            {{ trans('service-booking.kaiyi_understsand') }} 
+                        </P>
                     </div>
                 </div><!-- End Feature -->
             </div>
@@ -40,46 +38,46 @@
                     <img src="{{ asset('assets/img/kia/car.jpg') }}" alt="" class="img-fluid services-img">
                 </div><!-- End Feature -->
 
-                <div class="col-lg-8 col-md-6" data-aos="fade-up" data-aos-delay="300">
-                    <form action="#" method="" class="email-form">
+                <div class="col-lg-8 col-md-12" data-aos="fade-up" data-aos-delay="300">
+                    <form action="{{ route('servic-booking.store') }}" method="POST" class="email-form">
+                        @csrf
                         <div class="row">
                             
                             <div class="col-md-6 form-group">
-                                <label class="label">Full Name</label>
-                                <input type="text" name="name" class="form-control" id="name" placeholder="Type your full name" autocomplete="off" required="">
+                                <label class="label">{{ trans('service-booking.full_name') }}</label>
+                                <input type="text" name="name" class="form-control" id="name" placeholder="{{ trans('service-booking.type_full_name') }}" autocomplete="off" required="">
                             </div>
 
                             <div class="col-md-6 form-group mt-3 mt-md-0">
-                                <label class="label">Phone</label>
-                                <input type="email" class="form-control" name="email" id="email" placeholder="Type your phone" autocomplete="off" required="">
+                                <label class="label">{{ trans('service-booking.phone') }}</label>
+                                <input type="tel" class="form-control" name="phone" id="phone" placeholder="{{ trans('service-booking.type_your_phone') }}" autocomplete="off" required="">
                             </div>
                             <div class="col-md-6 form-group mt-3 mt-md-0">
-                                <label class="label">Email</label>
-                                <input type="email" class="form-control" name="email" id="email" placeholder="Email" autocomplete="off" required="">
+                                <label class="label">{{ trans('service-booking.email') }}</label>
+                                <input type="email" class="form-control" name="email" id="email" placeholder="{{ trans('service-booking.email') }}" autocomplete="off" required="">
                             </div>
                             <div class="col-md-6 form-group mt-3 mt-md-0">
-                                <label class="label" for="carModel">Select car model</label>
-                                <select class="form-control" name="carModel" id="carModel" required>
-                                    <option value="" disabled selected>Select</option>
-                                    <option value="toyota">X-3</option>
-                                    <option value="honda">X-3 pro</option>
-                                    <option value="ford">X-7</option>
-                                    <!-- يمكنك إضافة المزيد من الخيارات حسب الحاجة -->
+                                <label class="label" for="carModel">{{ trans('service-booking.select_car_model') }}</label>
+                                <select class="form-control" name="car_model" id="carModel" required>
+                                    <option value="" disabled selected>{{ trans('service-booking.select') }}</option>
+                                    <option value="x3">{{ trans('service-booking.x3') }}</option>
+                                    <option value="x3pro">{{ trans('service-booking.x3pro') }}</option>
+                                    <option value="x7">{{ trans('service-booking.x7') }}</option>
                                 </select>
                             </div>
                             <div class="col-md-6 form-group mt-3 mt-md-0">
-                                <label class="label">Date</label>
+                                <label class="label">{{ trans('service-booking.date') }}</label>
                                 <input type="date" class="form-control" name="date" id="date" autocomplete="off" required>
                             </div>
                             <div class="col-md-6 form-group mt-3 mt-md-0">
-                                <label class="label">Number Plate</label>
-                                <input type="number" class="form-control" name="number" id="number" placeholder="Type here" autocomplete="off" required>
+                                <label class="label">{{ trans('service-booking.number_plate') }}</label>
+                                <input type="number" class="form-control" name="number_plate" id="number" placeholder="{{ trans('service-booking.type_here_numper') }}" autocomplete="off" required>
                             </div>
 
                         </div>
 
                         <div class="text-center">
-                            <button type="submit">Enquire Now</button>
+                            <button type="submit">{{ trans('service-booking.enquire_now') }}</button>
                         </div>
                     </form>
                 </div><!-- End Contact Form -->
@@ -98,15 +96,15 @@
 
                 <div class="col-lg-12 col-md-12" data-aos="fade-up" data-aos-delay="100">
                     <div class="feature-service">
-                        <h3><span> Service</span> Center</h3>
+                        <h3><span>{{ trans('service-booking.service') }}</span> {{ trans('service-booking.center') }}</h3>
                     </div>
                 </div><!-- End Feature -->
 
                 <div class="col-lg-6 col-md-6" data-aos="fade-up" data-aos-delay="100">
                     <div class="feature-automobile">
-                        <h2>Legend World Automobile Service</h2>
-                        <P>Al Quoz- Industrial Area 2- Dubai, United Arab Emirates</P>
-                        <h4>Email : Service@kaiyi.ae</h4>
+                        <h2>{{ trans('service-booking.legend_automobile') }}</h2>
+                        <P>{{ trans('service-booking.title') }}</P>
+                        <h4>{{ trans('service-booking.email_ser') }}</h4>
                     </div>
                     <br/>
                     <div class="feature-automobile">

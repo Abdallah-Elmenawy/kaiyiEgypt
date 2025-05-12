@@ -21,7 +21,7 @@
                 <section id="blog-details" class="blog-details section">
                     <div class="container">
                         <div class="content" data-aos="fade-right" data-aos-duration="1000">
-                            <img src="{{ asset('assets/img/kia/models/2.png') }}" class="img-fluid" alt="">
+                            <img src="{{ asset('assets/img/kia/models/Kaiyi-X3-Pro.png') }}" class="img-fluid" alt="">
                         </div><!-- End post content -->
                     </div>
                 </section><!-- /Blog Details Section -->
@@ -112,7 +112,7 @@
                 <section id="blog-details" class="blog-details section">
                     <div class="container">
                         <div class="content" data-aos="fade-right" data-aos-duration="1000">
-                            <img src="{{ asset('assets/img/kia/models/2.png') }}" class="img-fluid" alt="">
+                            <img src="{{ asset('assets/img/kia/models/Kaiyi-X3-Pro.png') }}" class="img-fluid" alt="">
                         </div><!-- End post content -->
                     </div>
                     <div class="modelsxthteer-container" data-aos="fade-right" data-aos-duration="2000">

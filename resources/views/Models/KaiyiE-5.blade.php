@@ -9,7 +9,7 @@
 
 @section('content')
     <!-- hero Section -->
-    <section class="modelsxthteer section light-background" id="modelsxthteer">
+    <section class="modelsEfive section light-background" id="modelsEfive">
         <div class="container text-center text-md-center py-5">
         </div>
     </section>
@@ -21,7 +21,7 @@
                 <section id="blog-details" class="blog-details section">
                     <div class="container">
                         <div class="content" data-aos="fade-right" data-aos-duration="1000">
-                            <img src="{{ asset('assets/img/kia/models/2.png') }}" class="img-fluid" alt="">
+                            <img src="{{ asset('assets/img/kia/models/Kaiyi-E5.png') }}" class="img-fluid" alt="">
                         </div><!-- End post content -->
                     </div>
                 </section><!-- /Blog Details Section -->
@@ -29,45 +29,37 @@
 
             <div class="col-lg-6 sidebar">
 
-                <div class="modelsxthteer-container" data-aos="fade-left" data-aos-duration="1000">
+                <div class="modelsEfive-container" data-aos="fade-left" data-aos-duration="1000">
 
 
                     <!-- Search Widget -->
                     <div class="search-widget widget-item">
 
-                        <h3 class="widget-title">EXTERIOR FASHION MORE</h3>
+                        <h3 class="widget-title">Power Performance Kaiyi E5</h3>
 
                     </div><!--/Search Widget -->
 
                 </div>
 
-                <div class="modelsxthteer-container" data-aos="fade-left" data-aos-duration="2000">
+                <div class="modelsEfive-container" data-aos="fade-left" data-aos-duration="2000">
 
                     <!-- Recent Posts Widget -->
                     <div class="recent-posts-widget widget-item">
 
                         <div class="post-item">
-                            <h4>Intelligent cockpit</h4>
+                            <h4>1.5T CVT Power combination</h4>
                         </div><!-- End recent post item-->
 
                         <div class="post-item">
-                            <h4>Floating roof</h4>
+                            <h4>Maximum power 115 kW</h4>
                         </div><!-- End recent post item-->
 
                         <div class="post-item">
-                            <h4>LED CHMSL</h4>
+                            <h4>9-speed analog CVT transmission</h4>
                         </div><!-- End recent post item-->
 
                         <div class="post-item">
-                            <h4>Two-tone interior</h4>
-                        </div><!-- End recent post item-->
-
-                        <div class="post-item">
-                            <h4>Tailgate light bar</h4>
-                        </div><!-- End recent post item-->
-                        
-                        <div class="post-item">
-                            <h4>Wingspan front grille</h4>
+                            <h4>Independent suspension</h4>
                         </div><!-- End recent post item-->
 
                     </div><!--/Recent Posts Widget -->
@@ -79,13 +71,23 @@
         </div>
     </div>
 
-    <section class="modelsxthteer section light-background" id="modelsxthteer">
+    <section class="modelsEfive section light-background" id="modelsEfive">
         <div class="container col-lg-6 col-md-6 text-center text-md-center py-5">
-            <h2 class="section-title">Comfort More</h2>
-            <p class="section-subtitle">60:40 seat split</p>
-            <p class="section-subtitle">Flexible storage space</p>
-            <p class="section-subtitle">2632mm super long wheelbase</p>
-            <p class="section-subtitle">Luxury soft-touch instrument panels</p>
+            <h2 class="section-title">Design Foucs</h2>
+            <p class="section-subtitle">Red brake calipers</p>
+            <p class="section-subtitle">Double outlet exhaust</p>
+            <p class="section-subtitle">LED daytime lights</p>
+        </div>
+
+    </section>
+
+    <br><br>
+    <section class="modelsEfiveT section light-background" id="modelsEfiveT">
+        <div class="container col-lg-6 col-md-6 text-center text-md-center py-5">
+            <h2 class="section-title">Feel Comfort</h2>
+            <p class="section-subtitle">1.5T CVT Power combination</p>
+            <p class="section-subtitle">Maximum power 115 kW</p>
+            <p class="section-subtitle">LED daytime lights</p>
         </div>
 
     </section>
@@ -94,13 +96,13 @@
         <div class="row">
             <div class="col-lg-12 col-md-12  sidebar">
 
-                <div class="modelsxthteer-container" data-aos="fade-left" data-aos-duration="1000">
+                <div class="modelsEfive-container" data-aos="fade-left" data-aos-duration="1000">
 
 
                     <!-- Search Widget -->
                     <div class="search-widget widget-item">
 
-                        <h3 class="widget-title">CONFIGURATION TABLE</h3>
+                        <h3 class="widget-title">Engine type</h3>
 
                     </div><!--/Search Widget -->
 
@@ -112,28 +114,40 @@
                 <section id="blog-details" class="blog-details section">
                     <div class="container">
                         <div class="content" data-aos="fade-right" data-aos-duration="1000">
-                            <img src="{{ asset('assets/img/kia/models/2.png') }}" class="img-fluid" alt="">
+                            <img src="{{ asset('assets/img/kia/models/Kaiyi-E5.png') }}" class="img-fluid" alt="">
                         </div><!-- End post content -->
                     </div>
-                    <div class="modelsxthteer-container" data-aos="fade-right" data-aos-duration="2000">
+                    <div class="modelsEfive-container" data-aos="fade-right" data-aos-duration="2000">
 
                         <!-- Recent Posts Widget -->
                         <div class="recent-posts-widget widget-item">
     
                             <div class="post-item">
-                                <h4>- Length*Width*Height(mm) <br>: 4400*1831*1653</h4>
+                                <h4>- Displacement (ml) <br>: 1498</h4>
                             </div><!-- End recent post item-->
     
                             <div class="post-item">
-                                <h4>- Wheelbase  : 2632 </h4>
+                                <h4>- Maximum horsepower (Ps)  : 116 </h4>
                             </div><!-- End recent post item-->
     
                             <div class="post-item">
-                                <h4>- Minimum ground clearance (mm) : 158</h4>
+                                <h4>- Rear Gauge (mm) : 1540</h4>
                             </div><!-- End recent post item-->
     
                             <div class="post-item">
-                                <h4>- Body structureSUV : (5 Doors and 5 seats)</h4>
+                                <h4>- Curb Weight (kg) : 1366</h4>
+                            </div><!-- End recent post item-->
+                            
+                            <div class="post-item">
+                                <h4>- Maximum power speed (RPM) : 5500</h4>
+                            </div><!-- End recent post item-->
+                            
+                            <div class="post-item">
+                                <h4>- Emission standard : China VI</h4>
+                            </div><!-- End recent post item-->
+                            
+                            <div class="post-item">
+                                <h4>- Transmission type : 5MT</h4>
                             </div><!-- End recent post item-->
     
                         </div><!--/Recent Posts Widget -->
@@ -145,33 +159,33 @@
 
             <div class="col-lg-6 col-md-6 sidebar">
 
-                <div class="modelsxthteer-container" data-aos="fade-left" data-aos-duration="2000">
+                <div class="modelsEfive-container" data-aos="fade-left" data-aos-duration="2000">
 
                     <!-- Recent Posts Widget -->
                     <div class="recent-posts-widget widget-item">
 
                         <div class="post-item">
-                            <h4>- Seats number : 5</h4>
+                            <h4>- Length : 4,400 mm</h4>
                         </div><!-- End recent post item-->
 
                         <div class="post-item">
-                            <h4>- Fuel tank capacity(L) : 51</h4>
+                            <h4>- Width : 1,831 mm</h4>
                         </div><!-- End recent post item-->
 
                         <div class="post-item">
-                            <h4>- Engine type : SQRE4G15C</h4>
+                            <h4>- Height : 1,483mm</h4>
                         </div><!-- End recent post item-->
 
                         <div class="post-item">
-                            <h4>- Displacement(ml) : 1499</h4>
+                            <h4>- Wheelbase : 2,632 mm</h4>
                         </div><!-- End recent post item-->
 
                         <div class="post-item">
-                            <h4>- Maximum horsepower (Ps) : 116</h4>
+                            <h4>- Minimum ground clearance : 158 mm</h4>
                         </div><!-- End recent post item-->
                         
                         <div class="post-item">
-                            <h4>- Maximum power (kW)/Maximum power<br> speed (RPM) : 85/6150</h4>
+                            <h4>- Body structure : SUV (5 doors and 5 seats)</h4>
                         </div><!-- End recent post item-->
 
                     </div><!--/Recent Posts Widget -->
@@ -184,7 +198,7 @@
         </div>
     </div>
 
-    <section class="modelsxthteer section light-background" id="modelsxthteer">
+    <section class="modelsEfive section light-background" id="modelsEfive">
         <div class="container text-center text-md-center py-5">
 
         </div>

@@ -1,7 +1,7 @@
 <!-- Title -->
 <title> @yield('title') </title>
 <!-- Favicons -->
-<!-- <link href="assets/img/favicon.png" rel="icon"> -->
+<link href="{{URL::asset('assets/img/kia/favicon.ico')}}" rel="icon"> 
 <link rel="apple-touch-icon" href="{{URL::asset('assets/img/apple-touch-icon.png')}}" >
 
 <!-- Fonts -->

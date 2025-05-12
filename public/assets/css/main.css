@@ -92,7 +92,7 @@ h6 {
 
 /* PHP Email Form Messages
 ------------------------------*/
-.php-email-form .error-message {
+.email-form .error-message {
   display: none;
   background: #df1529;
   color: #ffffff;
@@ -102,7 +102,7 @@ h6 {
   font-weight: 600;
 }
 
-.php-email-form .sent-message {
+.email-form .sent-message {
   display: none;
   color: #ffffff;
   background: #059652;
@@ -112,7 +112,7 @@ h6 {
   font-weight: 600;
 }
 
-.php-email-form .loading {
+.email-form .loading {
   display: none;
   background: var(--surface-color);
   text-align: center;
@@ -120,7 +120,7 @@ h6 {
   margin-bottom: 24px;
 }
 
-.php-email-form .loading:before {
+.email-form .loading:before {
   content: "";
   display: inline-block;
   border-radius: 50%;
@@ -129,7 +129,7 @@ h6 {
   margin: 0 10px -6px 0;
   border: 3px solid var(--accent-color);
   border-top-color: var(--surface-color);
-  animation: php-email-form-loading 1s linear infinite;
+  animation: email-form-loading 1s linear infinite;
 }
 
 @keyframes php-email-form-loading {
@@ -159,7 +159,7 @@ h6 {
 }
 
 .header .logo img {
-  max-height: 36px;
+  max-height: 120px;
   margin-right: 8px;
 }
 
@@ -378,9 +378,7 @@ h6 {
   width: 100%;
   height: auto;
 }
-/* .model-item:hover img {
-  animation: wiggle 3s linear infinite;
-} */
+
 .model-item:hover img {
   animation: bouncing 3s infinite;
 }
@@ -398,43 +396,20 @@ h6 {
   }
 }
 
-/* Keyframes */
-/* @keyframes wiggle {
-  0%, 7% {
-    transform: rotateZ(0);
-  }
-  15% {
-    transform: rotateZ(-15deg);
-  }
-  20% {
-    transform: rotateZ(10deg);
-  }
-  25% {
-    transform: rotateZ(-10deg);
-  }
-  30% {
-    transform: rotateZ(6deg);
-  }
-  35% {
-    transform: rotateZ(-4deg);
-  }
-  40%, 100% {
-    transform: rotateZ(0);
-  }
-} */
-
 .navmenu .dropdown ul.models .model-item a {
   text-decoration: none;
   font-weight: 500;
   border-radius: 10px;
   z-index: 1;
 }
+
 .navmenu .dropdown ul.models .model-item a:hover {
   background-color: var(--heading-color);
   color: var(--contrast-color);
 }
 
 /* Navmenu - Mobile */
+
 @media (max-width: 1199px) {
   .mobile-nav-toggle {
     color: var(--nav-color);
@@ -576,11 +551,29 @@ h6 {
     display: block;
   }
 }
-@media (max-width: 399px) {
-  .navmenu .dropdown ul a {
+@media (max-width: 1024px) {
+  .navmenu .dropdown ul a:hover {
 
-    background-color: var(--contrast-color);
-    background-color: var(--heading-color);  
+    color: var(--contrast-color);
+    background-color: var(--heading-color);
+    z-index: 1;
+  }
+  .navmenu .dropdown ul.models {
+    display: block;
+    min-width: 50%;
+  }
+
+  .navmenu .dropdown ul.models {
+    width: 85%;
+  }
+}
+@media (max-width: 1199px) {
+  .navmenu .dropdown ul {
+    display: none;
+  }
+
+  .navmenu .dropdown.dropdown-active > ul {
+    display: block;
   }
 }
 /*--------------------------------------------------------------
@@ -744,6 +737,15 @@ h6 {
 .footer .credits {
   margin-top: 6px;
   font-size: 13px;
+}
+
+.footer .logo-footer img {
+  max-width: 157px;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+  position: relative;
+  padding-top: 91px;
 }
 
 /*--------------------------------------------------------------
@@ -944,6 +946,18 @@ section,
   height: 100%;
   object-fit: cover;
   z-index: 1;
+}
+
+.hero video {
+    position: absolute;
+    inset: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    z-index: 1;
+}
+video::-webkit-media-controls {
+    display: none !important;
 }
 
 .hero .carousel-item {
@@ -1190,8 +1204,6 @@ section,
 # Services Section
 --------------------------------------------------------------*/
 .services .service-item {
-  /* background-color: var(--surface-color);
-  box-shadow: 0px 5px 90px 0px rgba(0, 0, 0, 0.1); */
   height: 100%;
   padding: 60px 30px;
   text-align: center;
@@ -1241,10 +1253,6 @@ section,
   margin-bottom: 0;
 }
 
-/* .services .service-item:hover {
-  box-shadow: 0px 5px 35px 0px rgba(0, 0, 0, 0.1);
-} */
-
 .services .service-item .icon img {
   position: relative;
   top: 0;
@@ -1256,34 +1264,6 @@ section,
   top: -10px;
   right: 10px;
   position: relative;
-
-}
-
-.services .service-item.item-cyan i {
-  color: #0dcaf0;
-}
-
-.services .service-item.item-cyan:hover .icon i {
-  color: #fff;
-}
-
-
-.services .service-item.item-orange i {
-  color: #fd7e14;
-}
-
-.services .service-item.item-orange:hover .icon i {
-  color: #fff;
-} 
-
-
-.services .service-item.item-teal img {
-  color: #20c997;
-  width: 300px;
-}
-
-.services .service-item.item-teal:hover .icon i {
-  color: #fff;
 }
 
 @keyframes slideInFromLeft {
@@ -1560,7 +1540,6 @@ section,
   background-color: var(--heading-color);
   border: none;
   color: white;
-  width: 50%;
 }
 
 .btn-primary:hover {
@@ -1570,7 +1549,6 @@ section,
 .btn-light {
   color: black;
   border: none;
-  width: 40%;
 }
 
 .btn-light:hover {
@@ -1922,16 +1900,7 @@ section,
   color: var(--default-color);
   margin-bottom: 20px;
 }
-/* .service-booking .features {
-  background-color: var(--surface-color);
-  display: flex;
-  align-items: center;
-  padding: 20px;
-  transition: 0.3s;
-  border: 1px solid color-mix(in srgb, var(--default-color), transparent 90%);
-  position: relative;
-  
-} */
+
 /*--------------------------------------------------------------
 # Portfolio Details Section
 --------------------------------------------------------------*/
@@ -2711,17 +2680,17 @@ section,
   color: color-mix(in srgb, var(--default-color), transparent 40%);
 }
 
-.contact .php-email-form {
+.contact .email-form {
   width: 100%;
 }
 
-.contact .php-email-form .form-group {
+.contact .email-form .form-group {
   padding-bottom: 8px;
 }
 
-.contact .php-email-form input[type=text],
-.contact .php-email-form input[type=email],
-.contact .php-email-form textarea {
+.contact .email-form input[type=text],
+.contact .email-form input[type=email],
+.contact .email-form textarea {
   color: var(--default-color);
   background-color: var(--surface-color);
   border-radius: 0px;
@@ -2730,30 +2699,30 @@ section,
   border-color: color-mix(in srgb, var(--default-color), transparent 80%);
 }
 
-.contact .php-email-form input[type=text]:focus,
-.contact .php-email-form input[type=email]:focus,
-.contact .php-email-form textarea:focus {
+.contact .email-form input[type=text]:focus,
+.contact .email-form input[type=email]:focus,
+.contact .email-form textarea:focus {
   border-color: var(--accent-color);
 }
 
-.contact .php-email-form input[type=text]::placeholder,
-.contact .php-email-form input[type=email]::placeholder,
-.contact .php-email-form textarea::placeholder {
+.contact .email-form input[type=text]::placeholder,
+.contact .email-form input[type=email]::placeholder,
+.contact .email-form textarea::placeholder {
   color: color-mix(in srgb, var(--default-color), transparent 70%);
 }
 
-.contact .php-email-form input[type=text],
-.contact .php-email-form input[type=email] {
+.contact .email-form input[type=text],
+.contact .email-form input[type=email] {
   height: 48px;
   padding: 10px 15px;
 }
 
-.contact .php-email-form textarea {
+.contact .email-form textarea {
   padding: 10px 12px;
   height: 290px;
 }
 
-.contact .php-email-form button[type=submit] {
+.contact .email-form button[type=submit] {
   background: var(--accent-color);
   color: var(--contrast-color);
   border: 0;
@@ -2762,7 +2731,7 @@ section,
   border-radius: 4px;
 }
 
-.contact .php-email-form button[type=submit]:hover {
+.contact .email-form button[type=submit]:hover {
   background: color-mix(in srgb, var(--accent-color) 90%, black 15%);
 }
 
@@ -2967,9 +2936,6 @@ section,
 }
 
 /*--------------------------------------------------------------
-# contactUs 2 Section
---------------------------------------------------------------*/
-/*--------------------------------------------------------------
 # Contact Section
 --------------------------------------------------------------*/
 .service-booking {
@@ -3041,7 +3007,6 @@ section,
 # hero-section Section
 --------------------------------------------------------------*/
 .hero-section {
-  background-color: #f8f9fa; /* خلفية فاتحة */
   padding: 60px 20px;
   text-align: center;
   position: relative;
@@ -3062,6 +3027,7 @@ section,
   top: 20px;
   left: 20px;
 }
+
 /*--------------------------------------------------------------
 # Booking Tast Drive Section
 --------------------------------------------------------------*/
@@ -3137,18 +3103,12 @@ section,
 .tast-drive .comment-form .form-group textarea::placeholder {
   color: color-mix(in srgb, var(--default-color), transparent 70%);
 }
-/* .tast-drive .comment-form input[type=text],
-.tast-drive .comment-form input[type=tel],
-.tast-drive .comment-form input[type=email],
-.tast-drive .comment-form input[type=date],
-.tast-drive .comment-form input[type=time] {
-  height: 48px;
-  padding: 10px 15px;
-} */
+
 .tast-drive .comment-form .form-group textarea {
   padding: 10px 12px;
   height: 120px;
 }
+
 .tast-drive .comment-form button[type=submit] {
   background: var(--accent-color);
   color: var(--contrast-color);
@@ -3211,8 +3171,147 @@ section,
   padding-bottom: 20px;
 }
 /*--------------------------------------------------------------
-# Request Quote Section
+# request quote Section
 --------------------------------------------------------------*/
+.request-quote {
+  background-color: var(--surface-color);
+  padding: 60px 20px;
+  position: relative;
+}
+.request-quote .comment-form {
+  padding-top: 10px;
+}
+
+.request-quote .comment-form form {
+  background-color: var(--surface-color);
+  margin-top: 30px;
+  padding: 30px;
+  box-shadow: 0 4px 16px rgba(0, 0, 0, 0.1);
+}
+
+.request-quote .comment-form h4 {
+  font-weight: bold;
+  font-size: 30px;
+  margin-bottom: 30px;
+  position: relative;
+  color: var(--heading-color);
+}
+.request-quote .comment-form h4:after {
+  content: "";
+  position: absolute;
+  display: block; 
+  width: 100%;
+  height: 0.5px;
+  background: #ccc;
+  left: 0;
+  bottom: 0;
+  margin-top: 20px;
+}
+.request-quote .comment-form label {
+  font-size: 20px;
+}
+.request-quote .comment-form select.form-select,
+.request-quote .comment-form input[type=text],
+.request-quote .comment-form input[type=tel],
+.request-quote .comment-form input[type=email],
+.request-quote .comment-form input[type=date],
+.request-quote .comment-form input[type=time],
+.request-quote .comment-form .form-group textarea {
+  color: var(--default-color);
+  background-color: var(--surface-color);
+  border-radius: 0px;
+  box-shadow: none;
+  font-size: 20px;
+  border-color: color-mix(in srgb, var(--default-color), transparent 80%);
+  padding: 10px 15px;
+  margin-bottom: 20px;
+}
+
+.request-quote .comment-form select.form-select:focus,
+.request-quote .comment-form input[type=text]:focus,
+.request-quote .comment-form input[type=tel]:focus,
+.request-quote .comment-form input[type=email]:focus,
+.request-quote .comment-form input[type=date]:focus,
+.request-quote .comment-form input[type=time]:focus,
+.request-quote .comment-form .form-group textarea:focus {
+  border-color: var(--accent-color);
+}
+.request-quote .comment-form select.form-select::placeholder,
+.request-quote .comment-form input[type=text]::placeholder,
+.request-quote .comment-form input[type=tel]::placeholder,
+.request-quote .comment-form input[type=email]::placeholder,
+.request-quote .comment-form input[type=date]::placeholder,
+.request-quote .comment-form input[type=time]::placeholder,
+.request-quote .comment-form .form-group textarea::placeholder {
+  color: color-mix(in srgb, var(--default-color), transparent 70%);
+}
+
+.request-quote .comment-form .form-group textarea {
+  padding: 10px 12px;
+  height: 120px;
+}
+.request-quote .comment-form button[type=submit] {
+  background: var(--accent-color);
+  color: var(--contrast-color);
+  border: 0;
+  font-size: 20px;
+  padding: 13px 50px;
+  transition: 0.4s;
+  border-radius: 4px;
+}
+.request-quote .comment-form button[type=submit]:hover {
+  background: color-mix(in srgb, var(--accent-color) 90%, black 15%);
+}
+.request-quote .comment-form .form-groupimg {
+  margin-bottom: 25px;
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  text-align: center;
+  margin-bottom: 200px;
+  padding: 20px;
+  background-color: var(--surface-color);
+  border-radius: 6px;
+  border: 1px solid color-mix(in srgb, var(--default-color), transparent 70%);
+  box-shadow: 0px 2px 20px rgba(0, 0, 0, 0.1);
+}
+
+.request-quote .comment-form .form-groupimg:hover {
+  color: var(--heading-color);
+  border-color: #0d6efd;
+  box-shadow: 0 0 10px rgba(13, 110, 253, 0.5);
+  transition: transform 0.3s ease-in-out;
+}
+
+.request-quote .comment-form .form-groupimg img {
+  position: relative;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 100%;
+  height: auto;
+  transition: 0.3s;
+  z-index: 1;
+  margin-bottom: 20px;
+  cursor: pointer;
+  transition: 0.5s ease;
+}
+.tast-drive .comment-form .form-groupimg div {
+  padding: 50px 0;
+  font-size: 20px;
+  font-weight: 600;
+  top: 34px;
+  position: relative;
+  z-index: 2;
+}
+
+.tast-drive .comment-form .form-groupimg div a {
+  color: var(--heading-color);
+  padding-bottom: 20px;
+}
+
 /*--------------------------------------------------------------
 # ModelX 3 Pro Section
 --------------------------------------------------------------*/
@@ -3264,7 +3363,7 @@ section,
   box-shadow: 0 4px 16px rgba(0, 0, 0, 0.1);
 }
 
-.widget-title {
+.modelsxthteer-container .widget-title {
   color: var(--heading-color);
   font-size: 40px;
   text-align: center;
@@ -3287,4 +3386,189 @@ section,
   line-height: 1.5;
   color: var(--heading-color); 
   transition: 0.3s;
+}
+@media (max-width: 1200px) {
+  .modelsxthteer-container .widget-title {
+    font-size: 25px;
+  }
+}
+
+/*--------------------------------------------------------------
+# ModelX 7 Pro Section
+--------------------------------------------------------------*/
+.modelsxseven ,
+.modelsxsevenFo {
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-color: var(--contrast-color);
+  position: relative;
+  right: 0;
+  top: 0;
+  z-index: 1;
+  display: flex;
+  align-items: end;
+  justify-content: center;
+  width: 100%;
+  height: 90vh;
+}
+.modelsxseven {
+  background-image: url("../img/kia/x7/01.jpg");
+}
+.modelsxsevenFo {
+  background-image: url("../img/kia/x7/05.jpg");
+}
+
+.modelsxseven .container {
+  position: absolute;
+  z-index: 2;
+  text-align: center;
+  color: var(--contrast-color);
+}
+
+.modelsxseven h2.section-title {
+  font-size: 2rem;
+  font-weight: 700;
+  margin-bottom: 20px;
+  text-transform: uppercase;
+  padding-bottom: 20px;
+  position: relative;
+  color: var(--contrast-color);
+}
+.modelsxseven p {
+  font-size: 1.5rem;
+  text-transform: uppercase;
+  padding-bottom: 10px;
+  line-height: 1.5;
+  color: var(--contrast-color);
+}
+
+.modelsxseven-container {
+  background-color: var(--surface-color);
+  padding: 30px;
+  margin: 60px 0 30px 0;
+  box-shadow: 0 4px 16px rgba(0, 0, 0, 0.1);
+}
+
+.modelsxseven-container .widget-title {
+  color: var(--heading-color);
+  font-size: 40px;
+  text-align: center;
+  font-weight: 700;
+  padding: 0;
+  margin: 0;
+}
+
+.recent-posts-widget .post-item {
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 20px;
+  font-weight: bold;
+}
+
+.recent-posts-widget .post-item h3,
+.recent-posts-widget .post-item h4  { 
+  font-size: 22px;
+  font-weight: bold;
+  line-height: 1.5;
+  color: var(--heading-color); 
+  transition: 0.3s;
+}
+@media (max-width: 1200px) {
+  .modelsxseven-container .widget-title {
+    font-size: 25px;
+  }
+}
+/*--------------------------------------------------------------
+# ModelX 7 Pro Section
+--------------------------------------------------------------*/
+.modelsEfive ,
+.modelsEfiveFo,
+.modelsEfiveT {
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-color: var(--contrast-color);
+  position: relative;
+  right: 0;
+  top: 0;
+  z-index: 1;
+  display: flex;
+  align-items: end;
+  justify-content: center;
+  width: 100%;
+  height: 90vh;
+}
+.modelsEfive {
+  background-image: url("../img/kia/E5/01.jpg");
+}
+.modelsEfiveT {
+  background-image: url("../img/kia/E5/02.jpg");
+}
+.modelsEfiveFo {
+  background-image: url("../img/kia/E5/02.jpg");
+}
+
+.modelsEfive .container,
+.modelsEfiveT .container {
+  position: absolute;
+  z-index: 2;
+  text-align: center;
+  color: var(--contrast-color);
+}
+
+.modelsEfive h2.section-title,
+.modelsEfiveT h2.section-title {
+  font-size: 2rem;
+  font-weight: 700;
+  margin-bottom: 20px;
+  text-transform: uppercase;
+  padding-bottom: 20px;
+  position: relative;
+  color: var(--contrast-color);
+}
+.modelsEfive p,
+.modelsEfiveT p {
+  font-size: 1.5rem;
+  text-transform: uppercase;
+  padding-bottom: 10px;
+  line-height: 1.5;
+  color: var(--contrast-color);
+}
+
+.modelsEfive-container {
+  background-color: var(--surface-color);
+  padding: 30px;
+  margin: 60px 0 30px 0;
+  box-shadow: 0 4px 16px rgba(0, 0, 0, 0.1);
+}
+
+.modelsEfive-container .widget-title {
+  color: var(--heading-color);
+  font-size: 40px;
+  text-align: center;
+  font-weight: 700;
+  padding: 0;
+  margin: 0;
+}
+
+.recent-posts-widget .post-item {
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 20px;
+  font-weight: bold;
+}
+
+.recent-posts-widget .post-item h3,
+.recent-posts-widget .post-item h4  { 
+  font-size: 22px;
+  font-weight: bold;
+  line-height: 1.5;
+  color: var(--heading-color); 
+  transition: 0.3s;
+}
+@media (max-width: 1200px) {
+  .modelsEfive-container .widget-title {
+    font-size: 25px;
+  }
 }

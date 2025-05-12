@@ -8,7 +8,7 @@
 @endsection
 
 @section('content')
-    <!-- hero Section -->
+    <!-- hero Section x3pro -->
     <section class="modelsxthteer section light-background" id="modelsxthteer">
         <div class="container text-center text-md-center py-5">
         </div>
@@ -21,7 +21,7 @@
                 <section id="blog-details" class="blog-details section">
                     <div class="container">
                         <div class="content" data-aos="fade-right" data-aos-duration="1000">
-                            <img src="{{ asset('assets/img/kia/models/2.png') }}" class="img-fluid" alt="">
+                            <img src="{{ asset('assets/img/kia/models/Kaiyi-X3-Pro2.png') }}" class="img-fluid" alt="">
                         </div><!-- End post content -->
                     </div>
                 </section><!-- /Blog Details Section -->
@@ -112,7 +112,7 @@
                 <section id="blog-details" class="blog-details section">
                     <div class="container">
                         <div class="content" data-aos="fade-right" data-aos-duration="1000">
-                            <img src="{{ asset('assets/img/kia/models/2.png') }}" class="img-fluid" alt="">
+                            <img src="{{ asset('assets/img/kia/models/Kaiyi-X3-Pro2.png') }}" class="img-fluid" alt="">
                         </div><!-- End post content -->
                     </div>
                     <div class="modelsxthteer-container" data-aos="fade-right" data-aos-duration="2000">
