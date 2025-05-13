@@ -1,7 +1,7 @@
 @extends('layouts.master')
 
 @section('title')
-    Customer-support
+    {{ trans('customer-service.title_page') }}
 @endsection
 
 @section('css')

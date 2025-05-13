@@ -1,6 +1,7 @@
 <?php
 
 return [
+    'title_page' => 'About Us - Kaiyi',
     'entrerprise_prief' => 'ENTERPRISE BRIEF INTRODUCTION',
     'Kaiyi_Automobile_benefits' => 'Established in March 2014, Kaiyi Automobile benefits from Chery Group’s experience and technology in R&D, intelligent manufacturing, quality system, supply chain system, etc., that was all accumulated in the past decades. It is certified to produce both traditional and new energy vehicles.',
     'kaiyi_automobile_produces' => 'Kaiyi Automobile produces high quality products with the support of R&D resources from all over the world, including the Turin Modeling Design Center, Chery Test Technology Center, Chengdu Automobile Research Institute, and the Yibin Smart Factory.',

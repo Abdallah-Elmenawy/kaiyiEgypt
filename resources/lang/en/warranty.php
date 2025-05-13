@@ -1,6 +1,7 @@
 <?php
 
 return [
+    'title_warranty' => 'Warranty - kaiyi',
     'warrantyone' => 'Warranty',
     'warrantytwo' => 'Warranty',
     'complate_vahicle' => 'Complete Vehicle',

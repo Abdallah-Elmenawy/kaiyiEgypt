@@ -1,7 +1,7 @@
 @extends('layouts.master')
 
 @section('title')
-    Booking Test Drive - kaiyi
+    {{ trans('test-drive.title_page') }}
 @endsection
 
 @section('css')
@@ -23,13 +23,7 @@
             border-radius: 10px;
             margin-top: 20px;
         }
-        .form-groupimg.selected {
-        border: 3px solid #007bff;
-        border-radius: 10px;
-        padding: 5px;
-        background-color: #e9f5ff;
-        transition: 0.3s;
-    }
+        
     </style>
 @endsection
 
@@ -39,97 +33,15 @@
             <div class="page-breadcrumb">
                 <div class="row align-items-center">
                     <div class="col-5">
-                        <h4 class="page-title">Booking Test Drive</h4>
-                        <div class="d-flex align-items-center">
-                            <nav aria-label="breadcrumb">
-                                <ol class="breadcrumb">
-                                    <li class="breadcrumb-item"><a href="{{ url('/' . ($page = 'home')) }}">Home</a></li>
-                                    <li class="breadcrumb-item active" aria-current="page">Booking Test Drive</li>
-                                </ol>
-                            </nav>
-                        </div>
+                        <h4 class="page-title">{{ trans('test-drive.title_section') }}</h4>
                     </div>
                     <div class="col-7 col-md-5">
                         <div class="text-end upgrade-btn">
-                            <a href="{{ url('/' . ($page = 'home')) }}" class="btn btn-primary text-white">Back to Home</a>
+                            <a href="{{ url('/' . ($page = 'home')) }}" class="btn btn-primary text-white">{{ trans('test-drive.back_home') }}</a>
                         </div>
                     </div>
                 </div>
             </div>
-            {{-- <div class="row">
-            <div class="col-12">    
-                <div class="card">
-                    <div class="card-body">
-                        <div class="col-5">
-                            <h4 class="page-title">Booking Test Drive</h4>
-                            <div class="d-flex align-items-center">
-                                <nav aria-label="breadcrumb">
-                                    <ol class="breadcrumb">
-                                        <li class="breadcrumb-item"><a href="{{ url('/' . $page='home') }}">Home</a></li>
-                                        <li class="breadcrumb-item active" aria-current="page">Booking Test Drive</li>
-                                    </ol>
-                                </nav>
-                            </div>
-                        </div>
-                        <div class="col-7">
-                            <div class="text-end upgrade-btn">
-                                <a href="{{ url('/' . $page='home') }}" class="btn btn-primary text-white">Back to Home</a>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="card-body">
-                        <h4 class="card-title">Booking Test Drive</h4>
-                        <h6 class="card-subtitle">Fill the form below to book a test drive</h6>
-                        <form class="form-horizontal mt-4" action="" method="POST" enctype="multipart/form-data">
-                            @csrf
-                            <div class="row mb-3">
-                                <label for="name" class="col-sm-3 text-end control-label col-form-label">Name</label>
-                                <div class="col-sm-9">
-                                    <input type="text" name="name" class="form-control" id="name" placeholder="Enter your name" required>
-                                </div>
-                            </div>
-                            <div class="row mb-3">
-                                <label for="email" class="col-sm-3 text-end control-label col-form-label">Email</label>
-                                <div class="col-sm-9">
-                                    <input type="email" name="email" class="form-control" id="email" placeholder="Enter your email" required>
-                                </div>
-                            </div>
-                            <div class="row mb-3">
-                                <label for="phone" class="col-sm-3 text-end control-label col-form-label">Phone</label>
-                                <div class="col-sm-9">
-                                    <input type="text" name="phone" class="form-control" id="phone" placeholder="Enter your phone number" required>
-                                </div>
-                            </div>
-                            <div class="row mb-3">
-                                <label for="model_id" class="col-sm-3 text-end control-label col-form-label">Model</label>
-                                <div class="col-sm-9">
-                                    <select name="model_id" id="" class="form-select shadow-none form-control-line">
-                                        @foreach ($models as $model)
-                                            <option value="{{ $model->id }}">{{ $model->name }}</option>    
-                                        @endforeach 
-                                    </select>
-                                </div>
-                            </div>
-                            <div class="row mb-3">
-                                <label for="" class="col-sm-3 text-end control-label col-form-label">Date</label>
-                                <div class="col-sm-9">
-                                    <input type='date' name='date' id='date' class='form-control' required />
-                                </div>
-                            </div>
-
-                            <div class="border-top">
-                                <div class="card-body">
-                                    <div class="d-flex justify-content-between">
-                                        <a href="{{ url('/' . $page='home') }}" class="btn btn-secondary">Cancel</a>
-                                        <button type="submit" class="btn btn-primary">Book Test Drive</button>
-                                    </div>
-                                </div>
-                            </div>
-                        </form>
-                    </div>
-                </div>
-            </div>
-        </div> --}}
         </div>
         <div class="container">
             <div class="row">
@@ -142,35 +54,35 @@
 
                             <form action="{{ route('booking.store') }}" method="POST">
                                 @csrf
-                                <h4>Personal Information</h4>
+                                <h4>{{ trans('test-drive.personal_information') }}</h4>
                                 <div class="row">
                                     <div class="col-md-6 form-group">
-                                        <label for="fullName" class="form-label">Full Name</label>
+                                        <label for="fullName" class="form-label">{{ trans('test-drive.full_name') }}</label>
                                         <input type="text" class="form-control" id="full_name" name="full_name"
-                                            placeholder="Enter your full name" required>
+                                            placeholder="{{ trans('test-drive.enter_full_name') }}" required>
                                     </div>
                                     <div class="col-md-6 form-group ">
-                                        <label for="phone" class="form-label">Phone Number</label>
+                                        <label for="phone" class="form-label">{{ trans('test-drive.phone_number') }}</label>
                                         <input type="tel" class="form-control" id="phone" name="phone"
-                                            placeholder="Enter your phone number" required pattern="[0-9]{10,15}">
+                                            placeholder="{{ trans('test-drive.enter_phone_number') }}" required pattern="[0-9]{10,15}">
                                     </div>
                                     <br><br>
                                     <div class="col-md-6 form-group ">
-                                        <label for="email" class="form-label">Email Address</label>
+                                        <label for="email" class="form-label">{{ trans('test-drive.email_address') }}</label>
                                         <input type="email" class="form-control" id="email" name="email"
-                                            placeholder="Enter your email address" required>
+                                            placeholder="{{ trans('test-drive.enter_email') }}" required>
                                     </div>
                                 </div>
                                 <br><br>
-                                <h4>Select Your Model</h4>
+                                <h4>{{ trans('test-drive.select_model') }}</h4>
                                 <div class="row d-flex justify-content-center gap-3">
                                     <div class="col-md-4 form-groupimg mb-4">
                                         <img src="{{ asset('assets/img/kia/models/Kaiyi-X3-Pro.png') }}" alt=""
                                             class="image-option img-thumbnail"
                                             onclick="selectImage(this, '3')" />
                                         <div class="text-center mt-2">
-                                            <a href="#">X3 Pro</a>
-                                            <p class="text-center">Compact SUV with advanced tech</p>
+                                            <a href="#">{{ trans('test-drive.x3Pro') }}</a>
+                                            <p class="text-center">{{ trans('test-drive.compactsuv') }}</p>
                                         </div>
                                     </div>
                                     <div class="col-md-4 form-groupimg mb-4">
@@ -178,8 +90,8 @@
                                             class="image-option img-thumbnail"
                                             onclick="selectImage(this, '2')" />
                                         <div class="text-center mt-2">
-                                            <a href="#">E5</a>
-                                            <p class="text-center">Electric sedan with eco-friendly design</p>
+                                            <a href="#">{{ trans('test-drive.e5') }}</a>
+                                            <p class="text-center">{{ trans('test-drive.electric') }}</p>
                                         </div>
                                     </div>
                                     <div class="col-md-4 form-groupimg mb-4">
@@ -187,8 +99,8 @@
                                             class="image-option img-thumbnail"
                                             onclick="selectImage(this, '1')" />
                                         <div class="text-center mt-2">
-                                            <a href="#">X7</a>
-                                            <p class="text-center">Premium midsize SUV with luxury features</p>
+                                            <a href="#">{{ trans('test-drive.x7') }}</a>
+                                            <p class="text-center">{{ trans('test-drive.premiumsuv') }}</p>
                                         </div>
                                     </div>
                                     <input type="hidden" name="selected_image_id" id="selectedImageId">
@@ -196,46 +108,47 @@
 
                                 <br><br>
 
-                                <h4>Choose Date & Time</h4>
+                                <h4>{{ trans('test-drive.date_time') }}</h4>
                                 <div class="row">
                                     <div class="col-md-6 form-group">
-                                        <label for="date" class="form-label">Preferred Date</label>
-                                        <input type="date" class="form-control fc-datepicker" id="date" name="date" placeholder="YYYY-MM-DD" required>
+                                        <label for="date" class="form-label">{{ trans('test-drive.preferred_date') }}</label>
+                                        <input type="date" class="form-control fc-datepicker" id="date" name="date" placeholder="{{ trans('test-drive.yy_dd') }}YYYY-MM-DD" required>
                                     </div>
                                     <div class="col-md-6 form-group">
-                                        <label for="time" class="form-label">Preferred Time</label>
+                                        <label for="time" class="form-label">{{ trans('test-drive.preferred_time') }}</label>
                                         <input type="time" class="form-control" id="best_time" name="best_time" required>
                                     </div>
                                 </div>
                                 <input type="hidden" name="car_id" id="selectedModel" required>
                                 <br><br>
 
-                                <h4>Dealership & Additional Information</h4>
+                                <h4>{{ trans('test-drive.dealership') }}</h4>
                                 <div class="row">
                                     <div class="col form-group">
-                                        <label for="location" class="form-label">Dealership Location</label>
+                                        <label for="location" class="form-label">{{ trans('test-drive.dealer_locat') }}</label>
                                         <select class="form-select" id="location" name="location" required>
-                                            <option value="" disabled selected>Select your location</option>
-                                            <option value="cairo">Cairo</option>
-                                            <option value="alexandria">Alexandria</option>
+                                            <option value="" disabled selected>{{ trans('test-drive.select_locat') }}</option>
+                                            <option value="cairo">{{ trans('test-drive.cairo') }}</option>
+                                            <option value="alexandria">{{ trans('test-drive.alexandria') }}</option>
                                         </select>
                                     </div>
                                 </div>
                                 <div class="row">
                                     <div class="col form-group">
-                                        <label for="comment" class="form-label">Additional Information (Optional)</label>
-                                        <textarea name="comment" class="form-control" placeholder="Any specific requirements or questions?"></textarea>
+                                        <label for="comment" class="form-label">{{ trans('test-drive.additional_information') }}</label>
+                                        <textarea name="comment" class="form-control" placeholder="{{ trans('test-drive.specific_requirements') }}"></textarea>
                                     </div>
                                 </div>
 
                                 <div class="row">
                                     <div class="col form-group">
-                                        <p>By booking this test drive, you agree to our terms and conditions. You can
-                                            reschedule or cancel your test drive up to 24 hours before the appointment.</p>
+                                        <p>
+                                            {{ trans('test-drive.booking_tast') }}
+                                        </p>
                                     </div>
                                 </div>
                                 <div class="text-center">
-                                    <button type="submit" class="btn btn-primary">Book Test drive</button>
+                                    <button type="submit" class="btn btn-primary">{{ trans('test-drive.book_test_drive') }}</button>
                                 </div>
 
                             </form>
@@ -252,44 +165,16 @@
 @endsection
 @section('js')
     <script>
-        function selectImage(element, imageId) {
-            // إزالة التحديد من كل العناصر
-            document.querySelectorAll('.form-groupimg').forEach(div => {
-                div.classList.remove('selected');
+        function selectImage(element) {
+            document.querySelectorAll('.form-groupimg .img-thumbnail').forEach(img => {
+                img.classList.remove('selected');
             });
 
-            // إضافة التحديد على العنصر الحالي
             element.classList.add('selected');
 
-            // حفظ القيمة المختارة في الحقل الخفي
-            document.getElementById('selectedImageId').value = imageId;
-        }
+            const carId = element.getAttribute('data-car-id');
+            document.getElementById('car_id').value = carId;
+        }   
     </script>
     
 @endsection
-{{-- @section('js') --}}
-
-{{-- <script>
-        function selectImage(element, imageUrl) {
-            // إزالة التحديد من كل الصور
-            document.querySelectorAll('.form-groupimg .img-thumbnail').forEach(img => {
-            img.classList.remove('selected');
-        });
-
-            // وضع التحديد على الصورة المختارة
-            element.classList.add('selected');
-
-            // تحديث الصورة المعروضة
-            document.getElementById('selectedModel').value = modelId;
-            const preview = document.getElementById('selectedImage');
-            preview.src = imageUrl;
-            preview.style.display = 'block';
-        }
-    </script> 
-
-<script>
-    function selectImage(element, modelName) {
-        document.getElementById('selectedModel').value = modelName;
-    }
-</script>
-@endsection --}}

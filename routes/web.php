@@ -12,25 +12,21 @@ Route::group(
         'prefix' => LaravelLocalization::setLocale(), 
         'middleware' => ['localeSessionRedirect', 'localizationRedirect', 'localeViewPath']
     ],  function () {
-            Route::get('/empty', function () {
-                return view('pages.empty');
-            });
-
             Route::get('/customer-service', function () {
                 return view('pages.customer-service');
-            });
+            })->name('customer-service');
 
             Route::get('/warranty', function () {
                 return view('pages.warranty');
-            });
+            })->name('warranty');
 
             Route::get('/contact-us', function () {
                 return view('pages.contact-us');
-            });
+            })->name('contact-us');
 
             Route::get('/about-us', function () {
                 return view('pages.about-us');
-            });
+            })->name('about-us');
 
             Route::get('/brand', function () {
                 return view('pages.brand');
@@ -38,15 +34,15 @@ Route::group(
 
             Route::get('/service-booking', function () {
                 return view('pages.service-booking');
-            });
+            })->name('service-booking');
 
             Route::get('/test-drive', function () {
                 return view('pages.test-drive');
-            });
+            })->name('test-drive');
 
             Route::get('/request-quote', function () {
                 return view('pages.request-quote');
-            });
+            })->name('request-quote');;
 
             Route::get('/Kaiyi-X-3', function () {
                 return view('Models.KaiyiX-3');
@@ -64,8 +60,8 @@ Route::group(
                 return view('Models.KaiyiX-7');
             });
 
-            Route::get('/', [CarController::class, 'index']);
-            Route::get('/home', [CarController::class, 'index']);
+            Route::get('/', [CarController::class, 'index'])->name('home');
+            Route::get('/home', [CarController::class, 'index'])->name('home');
             Route::get('/home/{slug}', [CarController::class, 'show'])->name('home.show');
 
             Route::post('/booking-request', [BookingRequestController::class, 'store'])->name('booking.store');

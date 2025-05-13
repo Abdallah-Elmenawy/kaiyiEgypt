@@ -1,6 +1,7 @@
 <?php
 
 return [
+    'title_warranty' => 'ضمان - كايي',
     'warrantyone' => 'ضمان',
     'warrantytwo' => 'ضمان',
     'complate_vahicle' => 'مركبة كاملة',

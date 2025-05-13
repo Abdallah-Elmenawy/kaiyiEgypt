@@ -1,7 +1,7 @@
 @extends('layouts.master')
 
 @section('title')
-    brand - kaiyi
+    {{ trans('brand.title_page') }}
 @endsection
 
 @section('css')

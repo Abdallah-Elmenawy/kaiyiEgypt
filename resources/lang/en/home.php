@@ -1,6 +1,7 @@
 <?php
 
 return [
+    'title_home' => 'Kaiyi Motor Egypt',
     'check' => 'Check out our lineup',
     'lead_text1' => 'Whenever and wherever, the strong power is always ready for your trip.',
     'product_title1' => 'KAIYI',

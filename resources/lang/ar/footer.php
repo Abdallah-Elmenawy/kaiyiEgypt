@@ -19,5 +19,5 @@ return [
     'mail' => 'info@kaiyimotoregypt.com',
     'connect_with_us' => 'تواصل معنا عبر وسائل التواصل الاجتماعى',
     'privacy_policy' => 'سياسة الخصوصية ',
-    'all_rights_reserved' => 'جميع الحقوق محفوظة لمجموعة ليجند القابضة',
+    'all_rights_reserved' => 'جميع الحقوق محفوظة لمجموعة اڤارا ايجينسي ',
 ];

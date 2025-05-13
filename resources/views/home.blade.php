@@ -1,7 +1,7 @@
 @extends('layouts.master')
 
 @section('title')
-    Kaiyi Motor Egypt
+    {{ trans('home.title_home') }}
 @endsection
 
 @section('css')
@@ -12,7 +12,6 @@
     <section id="hero" class="hero section dark-background">
 
         <div id="hero-carousel" class="carousel slide carousel-fade" data-bs-ride="carousel" data-bs-interval="5000">
-            <!-- الفيديو -->
             <div class="carousel-item active">
                     <img src="{{ asset('assets/img/hero-carousel/1-Ar-scaled.webp') }}" class="d-block w-100 h-100 object-fit-cover" style="position: absolute; z-index: 0;">
                 <video autoplay muted loop class="d-block w-100 h-100 object-fit-cover">
@@ -28,7 +27,7 @@
             <h2>{{ trans('home.check') }}</h2>
         </div>
         <div class="container">
-            <div class="row gy-4 ">
+            <div class="row gy-4">
                 @foreach ($cars as $car)
                     <div class="col-lg-4 col-md-6" data-aos="fade-right" data-aos-delay="600">
                         <div class="service-item item-cyan position-relative">
@@ -60,7 +59,7 @@
                 <div class="button-group">
                     <a href="{{ url('/' . ($page = 'test-drive')) }}"
                         class="btn btn-primary">{{ trans('home.Book_Test_Drive') }}</a>
-                    <a href="#" class="btn btn-light">{{ trans('home.Download_Specification') }}</a>
+                    <a href="{{ url('/' . ($page = 'test-drive')) }}" class="btn btn-light">{{ trans('home.Download_Specification') }}</a>
                 </div>
             </div>
         </div>

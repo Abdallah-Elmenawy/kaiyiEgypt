@@ -73,7 +73,7 @@
                                 </div>
                                 <br><br>
                                 <h4>{{ trans('request-quote.select_model') }}</h4>
-                                <div class="row d-flex justify-content-center gap-3">
+                                <div class="row d-flex justify-content-center gap-4">
                                     <div class="col-md-4 form-groupimg gap-4 mb-4">
                                         <img src="{{ asset('assets/img/kia/models/Kaiyi-X3-Pro.png') }}" alt=""
                                             class="image-option img-thumbnail"
@@ -87,7 +87,7 @@
                                     <div class="col-md-4 form-groupimg gap-4 mb-4">
                                         <img src="{{ asset('assets/img/kia/models/Kaiyi-E5.png') }}" alt=""
                                             class="image-option img-thumbnail"
-                                            data-car-id="1"
+                                            data-car-id="2"
                                             onclick="selectImage(this)" />
                                         <div class="text-center mt-2">
                                             <a href="#">E5</a>
@@ -96,7 +96,7 @@
                                     </div>
                                     <div class="col-md-4 form-groupimg gap-4 mb-4">
                                         <img src="{{ asset('assets/img/kia/models/Kaiyi-X7.png') }}" alt=""
-                                            data-car-id="1"
+                                            data-car-id="3"
                                             onclick="selectImage(this)"
                                             class="image-option img-thumbnail" />
                                         <div class="text-center mt-2">
@@ -174,7 +174,7 @@
             preview.style.display = 'block';
         }
     </script>
-    <script>
+    {{-- <script>
         const carPriceInput = document.getElementById('carPrice');
         const downPaymentInput = document.getElementById('downPayment');
         const monthsInput = document.getElementById('months');
@@ -199,7 +199,7 @@
         carPriceInput.addEventListener('input', calculateInstallment);
         downPaymentInput.addEventListener('input', calculateInstallment);
         monthsInput.addEventListener('input', calculateInstallment);
-    </script>
+    </script> --}}
     <script>
         function selectImage(element) {
             document.querySelectorAll('.form-groupimg .img-thumbnail').forEach(img => {

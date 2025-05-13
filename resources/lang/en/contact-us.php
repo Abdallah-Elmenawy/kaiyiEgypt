@@ -1,6 +1,7 @@
 <?php
 
 return [
+    'title_page' => 'Contact Us - Kaiyi',
     'here_for_you' => 'We’re Here for You',
     'kaiyi_value' => 'At Kaiyi, we value our customers and are committed to providing exceptional service. Contact us with any inquiries about our vehicles, services, or support. Your satisfaction is our priority.',
     'get_touch' => 'Get in Touch',

@@ -1,6 +1,7 @@
 <?php
 
 return [
+    'title_service' => 'Service Booking - kaiyi',
     'service' => 'Service',
     'booking' => 'Booking',
     'kaiyi_understsand' => 'At Kaiyi, we understand the importance of keeping your car in top-notch condition. That’s why we have streamlined our service booking process to ensure it’s as convenient as possible for our valued customers. Whether it’s regular maintenance, a minor repair, or a comprehensive service, booking an appointment with us is quick, easy, and hassle-free.',

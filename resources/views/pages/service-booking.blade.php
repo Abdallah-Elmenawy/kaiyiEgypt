@@ -1,7 +1,7 @@
 @extends('layouts.master')
 
 @section('title')
-    service-booking - kaiyi
+    {{ trans('service-booking.title_service') }}
 @endsection
 
 @section('css')
@@ -113,7 +113,7 @@
                 </div><!-- End Feature -->
                 <div class="col-lg-6 col-md-6" data-aos="fade-up" data-aos-delay="100">
                     <div class="mb-5">
-                        <iframe style="width: 100%; height: 300px;" src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d12097.433213460943!2d-74.0062269!3d40.7101282!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0xb89d1fe6bc499443!2sDowntown+Conference+Center!5e0!3m2!1smk!2sbg!4v1539943755621" frameborder="0" allowfullscreen=""></iframe>
+                        <iframe style="width: 100%; height: 300px;" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d89326.10872107957!2d31.103835199999992!3d30.087977800000008!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x14585b8874980765%3A0x17bcfe9a386bd547!2sKia%20Egypt%20-%20Abu%20Rawash!5e1!3m2!1sar!2seg!4v1747170728693!5m2!1sar!2seg" frameborder="0" allowfullscreen=""></iframe>
                     </div><!-- End Google Maps -->
                 </div><!-- End Feature -->
             </div>

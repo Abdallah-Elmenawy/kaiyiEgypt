@@ -1,7 +1,7 @@
 @extends('layouts.master')
 
 @section('title')
-    About Us
+    {{ trans('about.title_page') }}
 @endsection
 
 @section('css')

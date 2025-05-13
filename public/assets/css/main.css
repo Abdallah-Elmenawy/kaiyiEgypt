@@ -63,6 +63,10 @@
 /*--------------------------------------------------------------
 # General Styling & Shared Classes
 --------------------------------------------------------------*/
+html {
+  scroll-behavior: smooth;
+}
+
 body {
   color: var(--default-color);
   background-color: var(--background-color);
@@ -87,7 +91,7 @@ h4,
 h5,
 h6 {
   color: var(--heading-color);
-  font-family: var(--heading-font);
+  font-family: var(--default-font);
 }
 
 /* PHP Email Form Messages
@@ -148,10 +152,20 @@ h6 {
 .header {
   color: var(--default-color);
   background-color: var(--heading-color);
-  padding: 10px 0;
+  padding: 0;
   transition: all 0.5s;
   z-index: 997;
   box-shadow: 0px 0 18px rgba(0, 0, 0, 0.1);
+  transition: 0.4s ease-in-out;
+  position: fixed;
+  top: 0;
+  width: 100%;
+}
+
+.header.hide-header {
+  opacity: 0;
+  pointer-events: none;
+  transition: opacity 0.3s ease-in-out;
 }
 
 .header .logo {
@@ -159,7 +173,7 @@ h6 {
 }
 
 .header .logo img {
-  max-height: 120px;
+  max-height: 90px;
   margin-right: 8px;
 }
 
@@ -173,7 +187,7 @@ h6 {
 
 .header .logo span {
   color: var(--accent-color);
-  font-size: 26px;
+  font-size: 18px;
   font-weight: 700;
 }
 
@@ -203,7 +217,9 @@ h6 {
   .header .logo {
     order: 1;
   }
-
+  .header .logo img {
+    max-height: 70px;
+  }
   .header .logo h1 {
     font-size: 24px;
   }
@@ -225,6 +241,14 @@ h6 {
 @media (min-width: 1200px) {
   .navmenu {
     padding: 0;
+    height: 70px;
+    width: 100%; 
+    display: flex; 
+    align-items: center; 
+    justify-content: space-between; 
+    padding: 0 200px; 
+    box-sizing: border-box; 
+    min-width: 1200px;
   }
 
   .navmenu ul {
@@ -245,7 +269,7 @@ h6 {
   .navmenu a:focus {
     color: var(--contrast-color);
     padding: 18px 30px;
-    font-size: 25px;
+    font-size: 18px;
     display: flex;
     align-items: center;
     justify-content: space-between;
@@ -264,9 +288,12 @@ h6 {
   .navmenu li:last-child a {
     padding-right: 0;
   }
-
+  .navmenu ul li a {
+  transition: color 0.3s ease;
+}
+  
+  .navmenu a.active,
   .navmenu li:hover>a,
-  .navmenu .active,
   .navmenu .active:focus {
     color: var(--accent-color);
   }
@@ -445,7 +472,7 @@ h6 {
   .navmenu a:focus {
     color: var(--nav-dropdown-color);
     padding: 10px 20px;
-    font-family: var(--nav-font);
+    font-family: var(--default-font);
     font-size: 17px;
     font-weight: 500;
     display: flex;
@@ -480,6 +507,7 @@ h6 {
   .navmenu .active,
   .navmenu .active:focus {
     color: var(--nav-dropdown-hover-color);
+    font-weight: bold;
   }
 
   .navmenu .active i,
@@ -605,13 +633,13 @@ h6 {
   font-size: 26px;
   font-weight: 700;
   letter-spacing: 1px;
-  font-family: var(--heading-font);
+  font-family: var(--default-font);
   color: var(--heading-color);
 }
 
 .footer .footer-about p {
   font-size: 14px;
-  font-family: var(--heading-font);
+  font-family: var(--default-font);
 }
 
 .footer .social-links a {
@@ -638,10 +666,13 @@ h6 {
   font-weight: bold;
   position: relative;
   padding-bottom: 12px;
+  line-height: 1.5;
+
 }
 
 .footer .footer-links {
   margin-bottom: 30px;
+  line-height: 1rem;
 }
 
 .footer .footer-links ul {
@@ -660,7 +691,7 @@ h6 {
   padding-bottom: 15px;
   display: flex;
   align-items: center;
-  line-height: 1rem;
+  line-height: 1.5rem;
   font-size: 16px;
 }
 
@@ -671,7 +702,7 @@ h6 {
 .footer .footer-links ul a {
   color: color-mix(in srgb, var(--default-color), transparent 30%);
   display: inline-block;
-  line-height: 1;
+  line-height: 1.8;
 }
 
 .footer .footer-links ul a:hover {
@@ -732,6 +763,8 @@ h6 {
 
 .footer .copyright p {
   margin-bottom: 0;
+  font-size: 14px;
+  font-weight: bold;
 }
 
 .footer .credits {
@@ -925,7 +958,7 @@ section,
 
 .hero .carousel {
   width: 100%;
-  min-height: calc(100vh - 75px);
+  min-height: 100vh;
   padding: 0;
   margin: 0;
   position: relative;
@@ -952,7 +985,7 @@ section,
     position: absolute;
     inset: 0;
     width: 100%;
-    height: 100%;
+    min-height: calc(100vh - 48px);
     object-fit: cover;
     z-index: 1;
 }
@@ -1203,6 +1236,10 @@ video::-webkit-media-controls {
 /*--------------------------------------------------------------
 # Services Section
 --------------------------------------------------------------*/
+.services {
+    padding: 100px 0;
+}
+
 .services .service-item {
   height: 100%;
   padding: 60px 30px;
@@ -1211,7 +1248,15 @@ video::-webkit-media-controls {
   border-radius: 5px;
   
 }
-
+.services .section-title h2 {
+    font-size: 32px;
+    font-weight: 700;
+    margin-bottom: 20px;
+    margin-top: 20px;
+    text-transform: uppercase;
+    padding-bottom: 20px;
+    position: relative;
+}
 .services .service-item .icon {
   margin: 0 auto;
   width: 100px;
@@ -1312,7 +1357,7 @@ video::-webkit-media-controls {
   margin-bottom: 5px;
   border-radius: 4px;
   transition: all 0.3s ease-in-out;
-  font-family: var(--heading-font);
+  font-family: var(--default-font);
 }
 
 .portfolio .portfolio-filters li:hover,
@@ -1400,7 +1445,8 @@ video::-webkit-media-controls {
 
 .service .content-wrapper p {
   color: var(--heading-color);
-  padding-bottom: 20px;
+  padding-top: 40px;
+  padding-bottom: 40px;
 }
 
 .service .service-item {
@@ -1421,7 +1467,7 @@ video::-webkit-media-controls {
 }
 
 .service .service-item .icon img {
-  width: 65px;
+  width: 100px;
   top: 0;
   left: 0;
   transition: 0.3s;
@@ -1604,7 +1650,7 @@ video::-webkit-media-controls {
   text-transform: uppercase;
   display: block;
   font-weight: 600;
-  font-family: var(--heading-font);
+  font-family: var(--default-font);
 }
 
 .skills .progress .skill .val {
@@ -2096,7 +2142,7 @@ video::-webkit-media-controls {
   color: var(--accent-color);
   font-size: 48px;
   font-weight: 700;
-  font-family: var(--heading-font);
+  font-family: var(--default-font);
   margin-bottom: 0;
 }
 
@@ -2123,7 +2169,7 @@ video::-webkit-media-controls {
   border-radius: 5px;
   font-size: 16px;
   font-weight: 500;
-  font-family: var(--heading-font);
+  font-family: var(--default-font);
   transition: 0.3s;
   margin-top: 20px;
   margin-bottom: 6px;
@@ -3016,6 +3062,11 @@ video::-webkit-media-controls {
   font-size: 2.5rem;
   font-weight: bold;
 }
+.hero-section h2 {
+  font-size: 2.5rem;
+  color: var(--accent-color);
+  box-shadow: 0 4px 16px rgba(0, 0, 0, 0.1);
+}
 
 .hero-section p {
   font-size: 1.2rem;
@@ -3033,9 +3084,10 @@ video::-webkit-media-controls {
 --------------------------------------------------------------*/
 .tast-drive {
   background-color: var(--surface-color);
-  padding: 60px 20px;
+  padding-top: 80px;
   position: relative;
 }
+
 .tast-drive .comment-form {
   padding-top: 10px;
 }
@@ -3170,6 +3222,7 @@ video::-webkit-media-controls {
   color: var(--heading-color);
   padding-bottom: 20px;
 }
+
 /*--------------------------------------------------------------
 # request quote Section
 --------------------------------------------------------------*/
@@ -3177,6 +3230,7 @@ video::-webkit-media-controls {
   background-color: var(--surface-color);
   padding: 60px 20px;
   position: relative;
+  margin-top: 34px;
 }
 .request-quote .comment-form {
   padding-top: 10px;
@@ -3287,7 +3341,7 @@ video::-webkit-media-controls {
 
 .request-quote .comment-form .form-groupimg img {
   position: relative;
-  top: 50%;
+  top: 40%;
   left: 50%;
   transform: translate(-50%, -50%);
   width: 100%;
@@ -3298,18 +3352,10 @@ video::-webkit-media-controls {
   cursor: pointer;
   transition: 0.5s ease;
 }
-.tast-drive .comment-form .form-groupimg div {
-  padding: 50px 0;
-  font-size: 20px;
-  font-weight: 600;
-  top: 34px;
-  position: relative;
-  z-index: 2;
-}
-
-.tast-drive .comment-form .form-groupimg div a {
-  color: var(--heading-color);
-  padding-bottom: 20px;
+.request-quote .comment-form .form-groupimg a {
+  font-size: 16px;
+  color: var(--default-color);
+  font-weight: bold;
 }
 
 /*--------------------------------------------------------------

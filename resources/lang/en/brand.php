@@ -1,6 +1,7 @@
 <?php
 
 return [
+    'title_page'=>'Brand - kaiyi',
     'show_real'=>'Show Of The Real Me',
     'smart_multi'=>'Smart Multi Screen Suv',
     'widger_kaiyi'=>'Kaiyi',

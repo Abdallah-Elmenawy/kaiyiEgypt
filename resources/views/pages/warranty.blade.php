@@ -1,7 +1,7 @@
 @extends('layouts.master')
 
 @section('title')
-    warranty - kaiyi
+    {{ trans('warranty.title_warranty') }}
 @endsection
 
 @section('css')
