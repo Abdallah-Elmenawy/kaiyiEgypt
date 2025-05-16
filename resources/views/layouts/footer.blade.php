@@ -34,7 +34,7 @@
                     <li><a href="https://maps.app.goo.gl/VSaUb6u3hsvLriVh8" target="_blank">{{ trans('footer.address') }}</a></li>
                     <li><a href="#">{{ trans('footer.working') }}</a></li>
                     <li><a href="tel: 16434" target="_blank">{{ trans('footer.phone') }}</a></li>
-                    <li><a href="mailto:info@kaiyimotoregypt.com" >{{ trans('footer.mail') }}</a></li>
+                    <li><a href="mailto:info@kaiyimotorsegypt.com" >{{ trans('footer.mail') }}</a></li>
                 </ul>
             </div>
 

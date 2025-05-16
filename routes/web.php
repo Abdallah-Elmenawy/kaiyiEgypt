@@ -64,7 +64,7 @@ Route::group(
             Route::get('/home', [CarController::class, 'index'])->name('home');
             Route::get('/home/{slug}', [CarController::class, 'show'])->name('home.show');
 
-            Route::post('/booking-request', [BookingRequestController::class, 'store'])->name('booking.store');
+            Route::post('/booking/store', [BookingRequestController::class, 'store'])->name('booking.store');
             Route::post('/installment', [InstallmentPaymentsController::class, 'store'])->name('installment.store');
             Route::post('/contact-us', [ContactUsController::class, 'store'])->name('contact-us.store');
             Route::get('/servic-booking', [ServicBookingController::class, 'create'])->name('servic-booking.create');

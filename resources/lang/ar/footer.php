@@ -16,7 +16,7 @@ return [
     'address' => 'شارع المنطقة الصناعية الأولى - 40 أكتوبر',
     'working' => 'الاحد - السبت من الساعة 9:00 صباحاً الى 7:00 مساءً .',
     'phone' => '16434',
-    'mail' => 'info@kaiyimotoregypt.com',
+    'mail' => 'info@kaiyimotorsegypt.com',
     'connect_with_us' => 'تواصل معنا عبر وسائل التواصل الاجتماعى',
     'privacy_policy' => 'سياسة الخصوصية ',
     'all_rights_reserved' => 'جميع الحقوق محفوظة لمجموعة اڤارا ايجينسي ',

@@ -6,7 +6,7 @@ return [
     'model' => 'Model',
     'buy' => 'Buy',
     'after_sales' => 'After Sales',
-    'contact' => 'Contact',
+    'contact' => 'Contact us',
     'test_drive' => 'Book Test Drive',
     'request_quote' => 'Request for Quote',
     'customer_support' => 'Customer Support',

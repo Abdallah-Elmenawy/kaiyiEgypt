@@ -1,9 +1,11 @@
-<header id="header" class="header d-flex align-items-center sticky-top">
-    <div class="container position-relative d-flex align-items-center">
+<header id="header" class="header d-flex align-items-center sticky-top {{ app()->getLocale() === 'ar' ? 'dir-rtl' : 'dir-ltr' }}">
+    <div class="container-fluid d-flex justify-content-between align-items-center px-4">
 
-        <a href="{{ url('/' . ($page = 'home')) }}" class="logo d-flex align-items-center me-auto">
-            <img src="{{ URl::asset('assets/img/kia/logo.png') }}" alt="logo">
-        </a>
+        <div class="header-left d-flex align-items-center">
+            <a href="{{ url('/' . ($page = 'home')) }}" class="logo d-flex align-items-center">
+                <img src="{{ URl::asset('assets/img/kia/logo.png') }}" alt="logo">
+            </a>
+        </div>
         <nav id="navmenu" class="navmenu">
             <ul>
                 <li><a href="{{ url('/' . ($page = 'home')) }}" class="{{ request()->routeIs('home', 'home.show') ? 'active' : '' }}">{{ trans('navbar.home') }}</a></li>
@@ -78,14 +80,14 @@
                 @endphp
 
                 {{-- translate on media screen --}}
-                <li class="nav-trans d-none d-lg-flex flex-row align-items-center ms-2" style="gap: 10px;">
+                <li class="nav-trans d-md-flex d-custom-trans align-items-center" style="gap: 5px; margin-left: 35px;">
                     @foreach ($orderedLocales as $localeCode => $properties)
                         @php $flagCode = $flagMap[$localeCode] ?? $localeCode; @endphp
                         <a rel="alternate" hreflang="{{ $localeCode }}"
                             href="{{ LaravelLocalization::getLocalizedURL($localeCode, null, [], true) }}"
                             class="nav-link d-flex align-items-center px-2 {{ App::getLocale() === $localeCode ? 'fw-bold text-danger' : '' }}"
                             style="text-decoration: none;">
-                            <img src="{{ asset('assets/img/flags/' . $flagCode . '.svg') }}" alt="{{ strtoupper($localeCode) }}"
+                            <img src="{{ asset('assets/img/flags/' . $flagCode . '.png') }}" alt="{{ strtoupper($localeCode) }}"
                                 width="20" class="me-1">
                             <span style="color: white;">{{ strtoupper($localeCode) }}</span>
                         </a>
@@ -96,8 +98,18 @@
         </nav>
 
     </div>
+    {{-- @php
+        $flagMap = [
+            'ar' => 'EG',
+            'en' => 'US',
+        ];
+
+        $orderedLocales = collect(['ar', 'en'])
+            ->mapWithKeys(fn ($code) => [$code => LaravelLocalization::getSupportedLocales()[$code]])
+            ->all();
+    @endphp --}}
     {{-- Translate on mobile screen --}}
-    <div class="d-flex d-lg-none justify-content-end mt-2 pe-3">
+    {{-- <div class="d-flex justify-content-end mt-2 pe-3">
         <div class="nav-trans d-flex flex-column align-items-end" style="gap: 10px;">
             @foreach ($orderedLocales as $localeCode => $properties)
                 @php $flagCode = $flagMap[$localeCode] ?? $localeCode; @endphp
@@ -105,16 +117,12 @@
                     href="{{ LaravelLocalization::getLocalizedURL($localeCode, null, [], true) }}"
                     class="nav-link d-flex align-items-center {{ App::getLocale() === $localeCode ? 'fw-bold text-danger' : '' }}"
                     style="text-decoration: none;">
-                    <img src="{{ asset('assets/img/flags/' . $flagCode . '.svg') }}" alt="{{ strtoupper($localeCode) }}"
+                    <img src="{{ asset('assets/img/flags/' . $flagCode . '.png') }}" alt="{{ strtoupper($localeCode) }}"
                         width="20" class="me-1">
                     <span style="color: white;">{{ strtoupper($localeCode) }}</span>
                 </a>
             @endforeach
         </div>
-    </div>
+    </div> --}}
 
-
-
-    <ul>
-    </ul>
 </header>

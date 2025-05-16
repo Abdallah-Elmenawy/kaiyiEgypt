@@ -5,7 +5,8 @@ namespace App\Http\Controllers;
 use App\Models\ServicBooking;
 use Illuminate\Http\Request;
 use Illuminate\Routing\Controller;
-
+use Illuminate\Support\Facades\Mail;
+use App\Mail\ServiceBookingMail;
 use App\Models\Car;
 
 class ServicBookingController extends Controller
@@ -49,7 +50,7 @@ class ServicBookingController extends Controller
         ]);
 
         ServicBooking::create($validated);
-
+        Mail::to('abdallahalielmenawy@gmail.com')->send(new ServiceBookingMail($validated));
         return redirect()->back()->with('success', __('service-booking.success_message'));
     }
 

@@ -79,28 +79,31 @@
                                     <div class="col-md-4 form-groupimg mb-4">
                                         <img src="{{ asset('assets/img/kia/models/Kaiyi-X3-Pro.png') }}" alt=""
                                             class="image-option img-thumbnail"
-                                            onclick="selectImage(this, '3')" />
+                                            data-car-id="1"
+                                            onclick="selectImage(this)" />
                                         <div class="text-center mt-2">
-                                            <a href="#">{{ trans('test-drive.x3Pro') }}</a>
-                                            <p class="text-center">{{ trans('test-drive.compactsuv') }}</p>
+                                            <a href="#">X3 Pro</a>
+                                            <p class="text-center">{{ trans('request-quote.compact_s_advanced') }}</p>
                                         </div>
                                     </div>
                                     <div class="col-md-4 form-groupimg mb-4">
                                         <img src="{{ asset('assets/img/kia/models/Kaiyi-E5.png') }}" alt=""
                                             class="image-option img-thumbnail"
-                                            onclick="selectImage(this, '2')" />
+                                            data-car-id="2"
+                                            onclick="selectImage(this)" />
                                         <div class="text-center mt-2">
-                                            <a href="#">{{ trans('test-drive.e5') }}</a>
-                                            <p class="text-center">{{ trans('test-drive.electric') }}</p>
+                                            <a href="#">E5</a>
+                                            <p class="text-center">{{ trans('request-quote.electric_sedan') }}</p>
                                         </div>
                                     </div>
                                     <div class="col-md-4 form-groupimg mb-4">
                                         <img src="{{ asset('assets/img/kia/models/Kaiyi-X7.png') }}" alt=""
                                             class="image-option img-thumbnail"
-                                            onclick="selectImage(this, '1')" />
+                                            data-car-id="3"
+                                            onclick="selectImage(this)" />
                                         <div class="text-center mt-2">
-                                            <a href="#">{{ trans('test-drive.x7') }}</a>
-                                            <p class="text-center">{{ trans('test-drive.premiumsuv') }}</p>
+                                            <a href="#">X7</a>
+                                            <p class="text-center">{{ trans('request-quote.midsize_svu') }}</p>
                                         </div>
                                     </div>
                                     <input type="hidden" name="selected_image_id" id="selectedImageId">
@@ -119,7 +122,7 @@
                                         <input type="time" class="form-control" id="best_time" name="best_time" required>
                                     </div>
                                 </div>
-                                <input type="hidden" name="car_id" id="selectedModel" required>
+                                <input type="hidden" name="car_id" id="car_id" required>
                                 <br><br>
 
                                 <h4>{{ trans('test-drive.dealership') }}</h4>
@@ -176,5 +179,15 @@
             document.getElementById('car_id').value = carId;
         }   
     </script>
+    {{-- <script>
+        function selectImage(element, carId) {
+            // إزالة الاختيار من كل الصور
+            document.querySelectorAll('.image-option').forEach(img => img.classList.remove('selected'));
+            element.classList.add('selected');
+
+            // تحديث قيمة car_id
+            document.getElementById('selectedModel').value = carId;
+        }
+    </script> --}}
     
 @endsection

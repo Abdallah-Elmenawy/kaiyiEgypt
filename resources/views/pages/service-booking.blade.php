@@ -58,11 +58,12 @@
                             </div>
                             <div class="col-md-6 form-group mt-3 mt-md-0">
                                 <label class="label" for="carModel">{{ trans('service-booking.select_car_model') }}</label>
-                                <select class="form-control" name="car_model" id="carModel" required>
+                                <select class="form-control" name="car_id" id="carModel" required>
                                     <option value="" disabled selected>{{ trans('service-booking.select') }}</option>
-                                    <option value="x3">{{ trans('service-booking.x3') }}</option>
-                                    <option value="x3pro">{{ trans('service-booking.x3pro') }}</option>
-                                    <option value="x7">{{ trans('service-booking.x7') }}</option>
+                                    <option value=4>{{ trans('service-booking.x3') }}</option>
+                                    <option value=3>{{ trans('service-booking.x3pro') }}</option>
+                                    <option value=2>{{ trans('service-booking.x3pro') }}</option>
+                                    <option value=1>{{ trans('service-booking.x7') }}</option>
                                 </select>
                             </div>
                             <div class="col-md-6 form-group mt-3 mt-md-0">

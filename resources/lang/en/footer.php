@@ -16,7 +16,7 @@ return [
     'address' => 'First Industrial Zone Street - October 40',
     'working' => 'Sunday~Saturday - 9:00 A.M To 7:00 P.M.',
     'phone' => '16434',
-    'mail' => 'info@kaiyimotoregypt.com',
+    'mail' => 'info@kaiyimotorsegypt.com',
     'titlesocial' => 'Connect With us on social',
     'connect_with_us' => 'Connect With us on social',
     'privacy_policy' => 'Privacy Policy',

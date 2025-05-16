@@ -10,14 +10,11 @@
 @section('content')
     <!-- Hero Section -->
     <section id="hero" class="hero section dark-background">
-
-        <div id="hero-carousel" class="carousel slide carousel-fade" data-bs-ride="carousel" data-bs-interval="5000">
-            <div class="carousel-item active">
-                    <img src="{{ asset('assets/img/hero-carousel/1-Ar-scaled.webp') }}" class="d-block w-100 h-100 object-fit-cover" style="position: absolute; z-index: 0;">
-                <video autoplay muted loop class="d-block w-100 h-100 object-fit-cover">
-                    <source src="{{ asset('assets/videos/hero-video.webm') }}" type="video/mp4">
-                </video>
-            </div>
+        <div class="hero-carousel">
+            <video autoplay muted loop playsinline>
+                <source src="{{ asset('assets/videos/hero-video.webm') }}" type="video/webm">
+                <source src="{{ asset('assets/videos/hero-video.mp4') }}" type="video/mp4">
+            </video>
         </div>
     </section>
     <!-- End Hero Section -->

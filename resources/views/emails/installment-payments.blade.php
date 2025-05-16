@@ -42,9 +42,15 @@
         <p><strong>Phone:</strong> {{ $bookingData['phone'] }}</p>
         <p><strong>Email:</strong> {{ $bookingData['email'] }}</p>
         <p><strong>Location:</strong> {{ $bookingData['location'] }}</p>
-        <p><strong>Car Model:</strong> {{ $bookingData['car_id'] }}</p>
-        <p><strong>Car Model:</strong> {{ $bookingData['car_price'] }}</p>
-        <p><strong>Date:</strong> {{ $bookingData['months'] }}</p>
+        <p><strong>Car Model:</strong> 
+            @php
+                $car = App\Models\Car::find($bookingData['car_id']);
+                $carName = json_decode($car->name, true);
+                echo $carName['en'];
+            @endphp
+        </p>
+        <p><strong>Car Price:</strong> {{ $bookingData['car_price'] }}</p>
+        <p><strong>Number of Months:</strong> {{ $bookingData['months'] }}</p>
         @if (!empty($bookingData['comment']))
             <p><strong>Additional Info:</strong> {{ $bookingData['comment'] }}</p>
         @endif

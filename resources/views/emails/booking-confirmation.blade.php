@@ -43,7 +43,13 @@
         <p><strong>Phone:</strong> {{ $bookingData['phone'] }}</p>
         <p><strong>Email:</strong> {{ $bookingData['email'] }}</p>
         <p><strong>Location:</strong> {{ $bookingData['location'] }}</p>
-        <p><strong>Car Model:</strong> {{ $bookingData['car_id'] }}</p>
+        <p><strong>Car Model:</strong> 
+            @php
+                $car = App\Models\Car::find($bookingData['car_id']);
+                $carName = json_decode($car->name, true);
+                echo $carName['en']; 
+            @endphp
+        </p>
         <p><strong>Date:</strong> {{ $bookingData['date'] }}</p>
         <p><strong>Preferred Time:</strong> {{ $bookingData['best_time'] }}</p>
         @if (!empty($bookingData['comment']))

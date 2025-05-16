@@ -35,12 +35,6 @@ class CarSeeder extends Seeder
                 'image'=>'assets/img/kia/models/Kaiyi-X3-Pro.png',
                 'view' => 'KaiyiX-3Pro'
             ],
-            // [
-            //     'en' => 'Kaiyi X3 Pro2',
-            //     'ar' => 'كايي X-3 2برو',
-            //     'image'=>'assets/img/kia/models/Kaiyi-X3-Pro2.png'
-            // ],
-            
         ];
 
         foreach ($cars as $car) {
@@ -50,7 +44,7 @@ class CarSeeder extends Seeder
                     'ar' => $car['ar']
                 ]),
                 'slug' => Str::slug($car['en']),
-                'img' => json_encode([$car['image']]), // داخل مصفوفة ليدعم أكثر من صورة
+                'img' => json_encode([$car['image']]), 
                 'details' => json_encode([
                     'en' => $car['details'] ?? '',
                     'ar' => $car['details'] ?? ''
