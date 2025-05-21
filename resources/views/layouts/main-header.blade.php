@@ -18,20 +18,21 @@
                     <ul class="models">
                         <li>
                             <div class="model-item">
-                                <img src="{{ URl::asset('assets/img/kia/models/Kaiyi-X3-Pro.png') }}" alt="Model 1">
-                                <a href="{{ url('/' . ($page = 'Kaiyi-X-3-Pro')) }}">{{ trans('navbar.Kaiyi3Pro') }}</a>
+                                <img src="{{ URl::asset('assets/img/kia/models/Kaiyi-X3-Pro.png') }}" alt="Model 1" style="cursor: pointer;" onclick="document.getElementById('kaiyix3-link').click();">
+                                <a href="{{ url('/' . ($page = 'Kaiyi-X-3-Pro')) }}" id="kaiyix3-link">{{ trans('navbar.Kaiyi3Pro') }}</a>
+
                             </div>
                         </li>
                         <li>
                             <div class="model-item">
-                                <img src="{{ URl::asset('assets/img/kia/models/Kaiyi-E5.png') }}" alt="Model 2">
-                                <a href="{{ url('/' . ($page = 'Kaiyi-E-5')) }}">{{ trans('navbar.KaiyiE5') }}</a>
+                                <img src="{{ URl::asset('assets/img/kia/models/Kaiyi-E5.png') }}" alt="Model 2" style="cursor: pointer;" onclick="document.getElementById('kaiyie5-link').click();">
+                                <a href="{{ url('/' . ($page = 'Kaiyi-E-5')) }}" id="kaiyie5-link">{{ trans('navbar.KaiyiE5') }}</a>
                             </div>
                         </li>
                         <li>
                             <div class="model-item">
-                                <img src="{{ URl::asset('assets/img/kia/models/Kaiyi-X7.png') }}" alt="Model 3">
-                                <a href="{{ url('/' . ($page = 'Kaiyi-X-7')) }}">{{ trans('navbar.KaiyiX7') }}</a>
+                                <img src="{{ URl::asset('assets/img/kia/models/Kaiyi-X7.png') }}" alt="Model 3" style="cursor: pointer;" onclick="document.getElementById('kaiyix7-link').click();">
+                                <a href="{{ url('/' . ($page = 'Kaiyi-X-7')) }}" id="kaiyix7-link">{{ trans('navbar.KaiyiX7') }}</a>
                             </div>
                         </li>
                     </ul>

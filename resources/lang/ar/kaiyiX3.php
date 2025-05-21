@@ -1,0 +1,28 @@
+<?php
+
+return [
+    'title_page' => ' X-3 كايي',
+    'exterior_fashion' => 'Exterior Fashion More',
+    'intelligent_cockpit' => 'قمرة القيادة المركزية',
+    'floating_roof' => 'سقف عائم',
+    'led_chmsl' => 'LED CHMSL',
+    'two_tone' => 'تصميم ثنائى الالوان',
+    'tailgate_light' => 'شريط ضوء الباب الخلفى',
+    'wingspan_front' => 'شبكة أمامية بجناحين',
+    'comfort_more' => 'راحة اكثر',
+    'seat_split' => 'تقسيم المقاعد بنسبة 40:60',
+    'flexible_storage' => 'مساحة تخزين مرنة',
+    'super_long' => 'قاعدة عجلات طويلة جداً 2632 مم',
+    'luxury_panels' => 'لوحات عدادات فاخرة ناعمة الملمس',
+    'configuration_table' => 'جدول التكوين',
+    'length_wight_height' => '- الطول * العرض * الارتفاع (مم) : 4400*1831*1653',
+    'wheelbase' => '- قاعدة العجلات  : 2632',
+    'minimum_ground' => '- الحد الادنى للخلوص الاأرضى (مم) : 158',
+    'body_structures' => '- بنية الجسم : سيارة متعددة الاستخدامات  (ابواب 5 و مقاعد 5)',
+    'seat_number' => '- عدد المقاعد  : 5',
+    'fuel_tank' => '- سعة خزان الوقود (لتر) : 51',
+    'engine_type' => '- نوع المحرك : SQRE4G15C',
+    'displacement' => '- الازاحة(مل) : 1499',
+    'maximum_horsepower' => '- أقصى قوة حصانية  (حصان) : 116',
+    'maximum_power' => '- الحد الاقصى للطاقة ( كيلو واط ) و اقصى سرعة للطاقة ( دورة فى الدقيقة ) : 85/6150',
+];

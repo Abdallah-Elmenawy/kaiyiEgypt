@@ -1,7 +1,7 @@
 @extends('layouts.master')
 
 @section('title')
-    Kaiyi E-5 
+    {{ trans('kaiyie5.title_page') }}
 @endsection
 
 @section('css')
@@ -35,7 +35,7 @@
                     <!-- Search Widget -->
                     <div class="search-widget widget-item">
 
-                        <h3 class="widget-title">Power Performance Kaiyi E5</h3>
+                        <h3 class="widget-title">{{ trans('kaiyie5.power_performance') }}</h3>
 
                     </div><!--/Search Widget -->
 
@@ -47,19 +47,19 @@
                     <div class="recent-posts-widget widget-item">
 
                         <div class="post-item">
-                            <h4>1.5T CVT Power combination</h4>
+                            <h4>{{ trans('kaiyie5.power_combination') }}</h4>
                         </div><!-- End recent post item-->
 
                         <div class="post-item">
-                            <h4>Maximum power 115 kW</h4>
+                            <h4>{{ trans('kaiyie5.max_power') }}</h4>
                         </div><!-- End recent post item-->
 
                         <div class="post-item">
-                            <h4>9-speed analog CVT transmission</h4>
+                            <h4>{{ trans('kaiyie5.speed_analog') }}</h4>
                         </div><!-- End recent post item-->
 
                         <div class="post-item">
-                            <h4>Independent suspension</h4>
+                            <h4>{{ trans('kaiyie5.independent_suspension') }}</h4>
                         </div><!-- End recent post item-->
 
                     </div><!--/Recent Posts Widget -->
@@ -73,10 +73,10 @@
 
     <section class="modelsEfive section light-background" id="modelsEfive">
         <div class="container col-lg-6 col-md-6 text-center text-md-center py-5">
-            <h2 class="section-title">Design Foucs</h2>
-            <p class="section-subtitle">Red brake calipers</p>
-            <p class="section-subtitle">Double outlet exhaust</p>
-            <p class="section-subtitle">LED daytime lights</p>
+            <h2 class="section-title">{{ trans('kaiyie5.design_foucs') }}</h2>
+            <p class="section-subtitle">{{ trans('kaiyie5.red_brake') }}</p>
+            <p class="section-subtitle">{{ trans('kaiyie5.double_outlet') }}</p>
+            <p class="section-subtitle">{{ trans('kaiyie5.daytime_lights') }}</p>
         </div>
 
     </section>
@@ -84,10 +84,10 @@
     <br><br>
     <section class="modelsEfiveT section light-background" id="modelsEfiveT">
         <div class="container col-lg-6 col-md-6 text-center text-md-center py-5">
-            <h2 class="section-title">Feel Comfort</h2>
-            <p class="section-subtitle">1.5T CVT Power combination</p>
-            <p class="section-subtitle">Maximum power 115 kW</p>
-            <p class="section-subtitle">LED daytime lights</p>
+            <h2 class="section-title">{{ trans('kaiyie5.feel_comfort') }}</h2>
+            <p class="section-subtitle">{{ trans('kaiyie5.power_comb') }}</p>
+            <p class="section-subtitle">{{ trans('kaiyie5.maximum_power') }}</p>
+            <p class="section-subtitle">{{ trans('kaiyie5.led_day') }}</p>
         </div>
 
     </section>
@@ -102,7 +102,7 @@
                     <!-- Search Widget -->
                     <div class="search-widget widget-item">
 
-                        <h3 class="widget-title">Engine type</h3>
+                        <h3 class="widget-title">{{ trans('kaiyie5.engine_type') }}</h3>
 
                     </div><!--/Search Widget -->
 
@@ -123,31 +123,31 @@
                         <div class="recent-posts-widget widget-item">
     
                             <div class="post-item">
-                                <h4>- Displacement (ml) <br>: 1498</h4>
+                                <h4>{{ trans('kaiyie5.displacement') }}</h4>
                             </div><!-- End recent post item-->
     
                             <div class="post-item">
-                                <h4>- Maximum horsepower (Ps)  : 116 </h4>
+                                <h4>{{ trans('kaiyie5.maxhorse') }}</h4>
                             </div><!-- End recent post item-->
     
                             <div class="post-item">
-                                <h4>- Rear Gauge (mm) : 1540</h4>
+                                <h4>{{ trans('kaiyie5.rea_gauge') }}</h4>
                             </div><!-- End recent post item-->
     
                             <div class="post-item">
-                                <h4>- Curb Weight (kg) : 1366</h4>
+                                <h4>{{ trans('kaiyie5.curb_weight') }}</h4>
                             </div><!-- End recent post item-->
                             
                             <div class="post-item">
-                                <h4>- Maximum power speed (RPM) : 5500</h4>
+                                <h4>{{ trans('kaiyie5.speed_power') }}</h4>
                             </div><!-- End recent post item-->
                             
                             <div class="post-item">
-                                <h4>- Emission standard : China VI</h4>
+                                <h4>{{ trans('kaiyie5.emission_standard') }}</h4>
                             </div><!-- End recent post item-->
                             
                             <div class="post-item">
-                                <h4>- Transmission type : 5MT</h4>
+                                <h4>{{ trans('kaiyie5.transmission') }}</h4>
                             </div><!-- End recent post item-->
     
                         </div><!--/Recent Posts Widget -->
@@ -165,27 +165,27 @@
                     <div class="recent-posts-widget widget-item">
 
                         <div class="post-item">
-                            <h4>- Length : 4,400 mm</h4>
+                            <h4>{{ trans('kaiyie5.length') }}</h4>
                         </div><!-- End recent post item-->
 
                         <div class="post-item">
-                            <h4>- Width : 1,831 mm</h4>
+                            <h4>{{ trans('kaiyie5.width') }}</h4>
                         </div><!-- End recent post item-->
 
                         <div class="post-item">
-                            <h4>- Height : 1,483mm</h4>
+                            <h4>{{ trans('kaiyie5.height') }}</h4>
                         </div><!-- End recent post item-->
 
                         <div class="post-item">
-                            <h4>- Wheelbase : 2,632 mm</h4>
+                            <h4>{{ trans('kaiyie5.wheelbase') }}</h4>
                         </div><!-- End recent post item-->
 
                         <div class="post-item">
-                            <h4>- Minimum ground clearance : 158 mm</h4>
+                            <h4>{{ trans('kaiyie5.minimum') }}</h4>
                         </div><!-- End recent post item-->
                         
                         <div class="post-item">
-                            <h4>- Body structure : SUV (5 doors and 5 seats)</h4>
+                            <h4>{{ trans('kaiyie5.body_structure') }}</h4>
                         </div><!-- End recent post item-->
 
                     </div><!--/Recent Posts Widget -->

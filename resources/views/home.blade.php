@@ -51,8 +51,9 @@
         <div class="container text-center text-md-start py-5">
             <div class="content-wrapper">
                 <p class="lead-text">{{ trans('home.lead_text1') }}</p>
-                <h2 class="product-title">
-                    {{ trans('home.product_title1') }}<span> {{ trans('home.product_titleX7') }}</span></h2>
+                {{-- <h2 class="product-title">
+                    {{ trans('home.product_title1') }}<span> {{ trans('home.product_titleX7') }}</span>
+                </h2> --}}
                 <div class="button-group">
                     <a href="{{ url('/' . ($page = 'test-drive')) }}"
                         class="btn btn-primary">{{ trans('home.Book_Test_Drive') }}</a>
@@ -131,7 +132,7 @@
         <div class="container text-center text-md-start py-5">
             <div class="content-wrapper">
                 <p class="lead-text">{{ trans('home.PASSIONATELY_DRIVE') }}</p>
-                <h2 class="product-title">{{ trans('home.strong_power') }}</h2>
+                {{-- <h2 class="product-title">{{ trans('home.strong_power') }}</h2> --}}
             </div>
         </div>
     </section>

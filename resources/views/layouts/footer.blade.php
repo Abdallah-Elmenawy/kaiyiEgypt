@@ -31,7 +31,7 @@
             <div class="col-lg-3 col-md-3 footer-links">
                 <h4>{{ trans('footer.SpeedDial') }}</h4>
                 <ul>
-                    <li><a href="https://maps.app.goo.gl/VSaUb6u3hsvLriVh8" target="_blank">{{ trans('footer.address') }}</a></li>
+                    <li><a href="https://maps.app.goo.gl/aQbHwfFRDNysasF19?g_st=awb" target="_blank">{{ trans('footer.address') }}</a></li>
                     <li><a href="#">{{ trans('footer.working') }}</a></li>
                     <li><a href="tel: 16434" target="_blank">{{ trans('footer.phone') }}</a></li>
                     <li><a href="mailto:info@kaiyimotorsegypt.com" >{{ trans('footer.mail') }}</a></li>
@@ -43,8 +43,6 @@
                 <div class="social-links d-flex mt-4">
                     <a href="https://www.facebook.com/share/12LRS6hhDWw/"target="_blank"><i class="bi bi-facebook"></i></a>
                     <a href="https://www.instagram.com/kaiyi.motors.egypt?igsh=ZXZpYWNpM3A0ZzFn"target="_blank"><i class="bi bi-instagram"></i></a>
-                    <a href="{{ url('/' . ($page = 'home')) }}"><i class="bi bi-twitter-x"></i></a>
-                    <a href="{{ url('/' . ($page = 'home')) }}"><i class="bi bi-linkedin"></i></a>
                     <a href="https://www.tiktok.com/@kaiyi.motors.egypt" target="_blank"><i class="bi bi-tiktok"></i></a>
                 </div>
 

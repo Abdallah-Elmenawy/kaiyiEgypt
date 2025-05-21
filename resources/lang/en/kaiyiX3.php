@@ -1,0 +1,28 @@
+<?php
+
+return [
+    'title_page' => 'Kaiyi X-3',
+    'exterior_fashion' => 'Exterior Fashion More',
+    'intelligent_cockpit' => 'Intelligent cockpit',
+    'floating_roof' => 'Floating roof',
+    'led_chmsl' => 'LED CHMSL',
+    'two_tone' => 'Two-tone interior',
+    'tailgate_light' => 'Tailgate light bar',
+    'wingspan_front' => 'Wingspan front grille',
+    'comfort_more' => 'Comfort More',
+    'seat_split' => '60:40 seat split',
+    'flexible_storage' => 'Flexible storage space',
+    'super_long' => '2632mm super long wheelbase',
+    'luxury_panels' => 'Luxury soft-touch instrument panels',
+    'configuration_table' => 'Configuration table',
+    'length_wight_height' => '- Length*Width*Height(mm) : 4400*1831*1653',
+    'wheelbase' => '- Wheelbase  : 2632',
+    'minimum_ground' => '- Minimum ground clearance (mm) : 158',
+    'body_structures' => '- Body structureSUV : (5 Doors and 5 seats)',
+    'seat_number' => '- Seats number : 5',
+    'fuel_tank' => '- Fuel tank capacity(L) : 51',
+    'engine_type' => '- Engine type : SQRE4G15C',
+    'displacement' => '- Displacement(ml) : 1499',
+    'maximum_horsepower' => '- Maximum horsepower (Ps) : 116',
+    'maximum_power' => '- Maximum power (kW)/Maximum power speed (RPM) : 85/6150',
+];

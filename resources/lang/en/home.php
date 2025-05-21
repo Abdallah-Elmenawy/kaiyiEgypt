@@ -17,6 +17,6 @@ return [
     'Kaiyi' => 'Kaiyi',
     'specialize_delivering' => 'We specialize in delivering intelligent products that are backed by an ongoing commitment to technological innovation.',
     'BookTestDrive' => 'Book a Test Drive',
-    'PASSIONATELY_DRIVE' => 'KUNPENG POWER, PASSIONATELY DRIVE',
+    'PASSIONATELY_DRIVE' => 'Kunpeng power, passionately drive',
     'strong_power' => 'Whenever and wherever, the strong power is always ready for your trip.',
 ];

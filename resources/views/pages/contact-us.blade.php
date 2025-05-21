@@ -36,9 +36,13 @@
         <div class="container" data-aos="fade">
             <div class="mb-5">
                 <iframe style="width: 100%; height: 400px;"
-                    src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d89326.10872107957!2d31.103835199999992!3d30.087977800000008!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x14585b8874980765%3A0x17bcfe9a386bd547!2sKia%20Egypt%20-%20Abu%20Rawash!5e1!3m2!1sar!2seg!4v1747170728693!5m2!1sar!2seg"
+                    src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2796.14816648411!2d30.914806600000002!3d29.920799199999998!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x1458559798271a95%3A0x67db6b5b5bcba0bb!2z2YXYtdmG2Lkg2KfZiiDYp9mBINis2Yog2KzYsdmI2Kg!5e1!3m2!1sar!2seg!4v1747786222144!5m2!1sar!2seg"
                     frameborder="0" allowfullscreen="">
                 </iframe>
+                {{-- <iframe style="width: 100%; height: 400px;"
+                    src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d89326.10872107957!2d31.103835199999992!3d30.087977800000008!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x14585b8874980765%3A0x17bcfe9a386bd547!2sKia%20Egypt%20-%20Abu%20Rawash!5e1!3m2!1sar!2seg!4v1747170728693!5m2!1sar!2seg"
+                    frameborder="0" allowfullscreen="">
+                </iframe> --}}
             </div>
             <div class="row gy-5 gx-lg-5">
 

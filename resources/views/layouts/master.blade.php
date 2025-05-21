@@ -22,10 +22,3 @@
 				@include('layouts.footer-scripts')	
 	</body>
 </html>
-
-{{-- <script>
-	setInterval(() => {
-		$("#notifications_count").load(window.location.href + "#notifications_count");
-		$("#underdnotifications").load(window.location.href + "#underdnotifications");
-	}, 5000);
-</script> --}}

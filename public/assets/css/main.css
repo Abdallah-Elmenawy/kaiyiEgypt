@@ -187,7 +187,7 @@ h6 {
   font-size: 26px;
   margin: 0;
   font-weight: 700;
-  text-transform: uppercase;
+  /* text-transform: uppercase; */
   color: var(--contrast-color);
 }
 
@@ -907,7 +907,7 @@ section,
   font-size: 32px;
   font-weight: 700;
   margin-bottom: 20px;
-  text-transform: uppercase;
+  /* text-transform: uppercase; */
   padding-bottom: 20px;
   position: relative;
 }
@@ -1145,7 +1145,7 @@ video::-webkit-media-controls {
 }
 
 .about .our-story h4 {
-  text-transform: uppercase;
+  /* text-transform: uppercase; */
   font-size: 1.1rem;
   color: color-mix(in srgb, var(--default-color), transparent 50%);
 }
@@ -1241,7 +1241,7 @@ video::-webkit-media-controls {
     font-weight: 700;
     margin-bottom: 20px;
     margin-top: 20px;
-    text-transform: uppercase;
+    /* text-transform: uppercase; */
     padding-bottom: 20px;
     position: relative;
 }
@@ -1498,7 +1498,7 @@ video::-webkit-media-controls {
 
 .service .content-wrapper p {
   padding-top: 30px;
-  text-transform: uppercase;
+  /* text-transform: uppercase; */
 }
 .service .content-wrapper p span {
   color: var(--accent-color); 
@@ -1653,7 +1653,7 @@ video::-webkit-media-controls {
   color: var(--heading-color);
   padding: 0;
   margin: 0 0 6px 0;
-  text-transform: uppercase;
+  /* text-transform: uppercase; */
   display: block;
   font-weight: 600;
   font-family: var(--default-font);
@@ -1941,7 +1941,7 @@ video::-webkit-media-controls {
   display: block;
   color: var(--default-color);
   margin-bottom: 20px;
-  text-transform: uppercase;
+  /* text-transform: uppercase; */
 }
 .service-booking .feature-service h3 span {
   color: var(--accent-color);
@@ -2045,7 +2045,7 @@ video::-webkit-media-controls {
 }
 
 .portfolio-details .portfolio-info ul strong {
-  text-transform: uppercase;
+  /* text-transform: uppercase; */
   font-weight: 400;
   color: color-mix(in srgb, var(--default-color), transparent 50%);
   font-size: 14px;
@@ -2286,7 +2286,7 @@ video::-webkit-media-controls {
   position: absolute;
   right: 0;
   bottom: 0;
-  text-transform: uppercase;
+  /* text-transform: uppercase; */
   font-size: 13px;
   padding: 6px 12px;
   font-weight: 500;
@@ -3408,14 +3408,14 @@ video::-webkit-media-controls {
   font-size: 2rem;
   font-weight: 700;
   margin-bottom: 20px;
-  text-transform: uppercase;
+  /* text-transform: uppercase; */
   padding-bottom: 20px;
   position: relative;
   color: var(--contrast-color);
 }
 .modelsxthteer p {
   font-size: 1.5rem;
-  text-transform: uppercase;
+  /* text-transform: uppercase; */
   padding-bottom: 10px;
   line-height: 1.5;
   color: var(--contrast-color);
@@ -3437,6 +3437,10 @@ video::-webkit-media-controls {
   margin: 0;
 }
 
+.modelsxthteer-container .widget-title span {
+  font-size: 2rem;
+  font-weight: normal;
+}
 .recent-posts-widget .post-item {
   display: flex;
   flex-direction: column;
@@ -3495,14 +3499,14 @@ video::-webkit-media-controls {
   font-size: 2rem;
   font-weight: 700;
   margin-bottom: 20px;
-  text-transform: uppercase;
+  /* text-transform: uppercase; */
   padding-bottom: 20px;
   position: relative;
   color: var(--contrast-color);
 }
 .modelsxseven p {
   font-size: 1.5rem;
-  text-transform: uppercase;
+  /* text-transform: uppercase; */
   padding-bottom: 10px;
   line-height: 1.5;
   color: var(--contrast-color);
@@ -3587,7 +3591,7 @@ video::-webkit-media-controls {
   font-size: 2rem;
   font-weight: 700;
   margin-bottom: 20px;
-  text-transform: uppercase;
+  /* text-transform: uppercase; */
   padding-bottom: 20px;
   position: relative;
   color: var(--contrast-color);
@@ -3595,7 +3599,7 @@ video::-webkit-media-controls {
 .modelsEfive p,
 .modelsEfiveT p {
   font-size: 1.5rem;
-  text-transform: uppercase;
+  /* text-transform: uppercase; */
   padding-bottom: 10px;
   line-height: 1.5;
   color: var(--contrast-color);

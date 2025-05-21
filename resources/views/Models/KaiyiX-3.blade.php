@@ -1,7 +1,7 @@
 @extends('layouts.master')
 
 @section('title')
-    Kaiyi X-3 
+    {{ trans('kaiyiX3.title_page') }}
 @endsection
 
 @section('css')
@@ -35,7 +35,7 @@
                     <!-- Search Widget -->
                     <div class="search-widget widget-item">
 
-                        <h3 class="widget-title">EXTERIOR FASHION MORE</h3>
+                        <h3 class="widget-title">{{ trans('kaiyiX3.exterior_fashion') }}</h3>
 
                     </div><!--/Search Widget -->
 
@@ -47,27 +47,27 @@
                     <div class="recent-posts-widget widget-item">
 
                         <div class="post-item">
-                            <h4>Intelligent cockpit</h4>
+                            <h4>{{ trans('kaiyiX3.intelligent_cockpit') }}</h4>
                         </div><!-- End recent post item-->
 
                         <div class="post-item">
-                            <h4>Floating roof</h4>
+                            <h4>{{ trans('kaiyiX3.floating_roof') }}</h4>
                         </div><!-- End recent post item-->
 
                         <div class="post-item">
-                            <h4>LED CHMSL</h4>
+                            <h4>{{ trans('kaiyiX3.led_chmsl') }}</h4>
                         </div><!-- End recent post item-->
 
                         <div class="post-item">
-                            <h4>Two-tone interior</h4>
+                            <h4>{{ trans('kaiyiX3.two_tone') }}</h4>
                         </div><!-- End recent post item-->
 
                         <div class="post-item">
-                            <h4>Tailgate light bar</h4>
+                            <h4>{{ trans('kaiyiX3.tailgate_light') }}</h4>
                         </div><!-- End recent post item-->
                         
                         <div class="post-item">
-                            <h4>Wingspan front grille</h4>
+                            <h4>{{ trans('kaiyiX3.wingspan_front') }}</h4>
                         </div><!-- End recent post item-->
 
                     </div><!--/Recent Posts Widget -->
@@ -81,11 +81,11 @@
 
     <section class="modelsxthteer section light-background" id="modelsxthteer">
         <div class="container col-lg-6 col-md-6 text-center text-md-center py-5">
-            <h2 class="section-title">Comfort More</h2>
-            <p class="section-subtitle">60:40 seat split</p>
-            <p class="section-subtitle">Flexible storage space</p>
-            <p class="section-subtitle">2632mm super long wheelbase</p>
-            <p class="section-subtitle">Luxury soft-touch instrument panels</p>
+            <h2 class="section-title">{{ trans('kaiyiX3.comfort_more') }}</h2>
+            <p class="section-subtitle">{{ trans('kaiyiX3.seat_split') }}</p>
+            <p class="section-subtitle">{{ trans('kaiyiX3.flexible_storage') }}</p>
+            <p class="section-subtitle">{{ trans('kaiyiX3.super_long') }}</p>
+            <p class="section-subtitle">{{ trans('kaiyiX3.luxury_panels') }}</p>
         </div>
 
     </section>
@@ -100,7 +100,7 @@
                     <!-- Search Widget -->
                     <div class="search-widget widget-item">
 
-                        <h3 class="widget-title">CONFIGURATION TABLE</h3>
+                        <h3 class="widget-title">{{ trans('kaiyiX3.configuration_table') }}</h3>
 
                     </div><!--/Search Widget -->
 
@@ -121,19 +121,19 @@
                         <div class="recent-posts-widget widget-item">
     
                             <div class="post-item">
-                                <h4>- Length*Width*Height(mm) <br>: 4400*1831*1653</h4>
+                                <h4>{{ trans('kaiyiX3.length_wight_height') }}</h4>
                             </div><!-- End recent post item-->
     
                             <div class="post-item">
-                                <h4>- Wheelbase  : 2632 </h4>
+                                <h4> {{ trans('kaiyie5.wheelbase') }}</h4>
                             </div><!-- End recent post item-->
     
                             <div class="post-item">
-                                <h4>- Minimum ground clearance (mm) : 158</h4>
+                                <h4>{{ trans('kaiyiX3.minimum_ground') }}</h4>
                             </div><!-- End recent post item-->
     
                             <div class="post-item">
-                                <h4>- Body structureSUV : (5 Doors and 5 seats)</h4>
+                                <h4>{{ trans('kaiyiX3.body_structures') }}</h4>
                             </div><!-- End recent post item-->
     
                         </div><!--/Recent Posts Widget -->
@@ -151,27 +151,27 @@
                     <div class="recent-posts-widget widget-item">
 
                         <div class="post-item">
-                            <h4>- Seats number : 5</h4>
+                            <h4>{{ trans('kaiyiX3.seat_number') }}</h4>
                         </div><!-- End recent post item-->
 
                         <div class="post-item">
-                            <h4>- Fuel tank capacity(L) : 51</h4>
+                            <h4>{{ trans('kaiyiX3.fuel_tank') }}</h4>
                         </div><!-- End recent post item-->
 
                         <div class="post-item">
-                            <h4>- Engine type : SQRE4G15C</h4>
+                            <h4>{{ trans('kaiyiX3.engine_type') }}</h4>
                         </div><!-- End recent post item-->
 
                         <div class="post-item">
-                            <h4>- Displacement(ml) : 1499</h4>
+                            <h4>{{ trans('kaiyiX3.displacement') }}</h4>
                         </div><!-- End recent post item-->
 
                         <div class="post-item">
-                            <h4>- Maximum horsepower (Ps) : 116</h4>
+                            <h4>{{ trans('kaiyiX3.maximum_horsepower') }}</h4>
                         </div><!-- End recent post item-->
                         
                         <div class="post-item">
-                            <h4>- Maximum power (kW)/Maximum power<br> speed (RPM) : 85/6150</h4>
+                            <h4>{{ trans('kaiyiX3.maximum_power') }}</h4>
                         </div><!-- End recent post item-->
 
                     </div><!--/Recent Posts Widget -->
