@@ -1,7 +1,7 @@
 <?php
 
 return [
-        'title_page' => 'طلب عرض الاسعار -كايي',
+    'title_page' => 'طلب عرض الاسعار - كايي',
     'installment_payments' => 'اطلب عرض الأسعار الآن',
     'personal_information' => 'معلومات شخصية',
     'full_name' => 'الاسم الكامل',
@@ -13,11 +13,11 @@ return [
     'your_location' => 'موقعك',
     'enter_location' => 'أدخل موقعك',
     'select_model' => 'اختر نموذجك',
-    'modelx3pro' => 'X3 Pro',
+    'modelx3pro' => 'اكس 3 يرو',
     'compact_s_advanced' => 'سيارة رياضية متعددة الاستخدامات مدمجة مع تكنولوجيا متقدمة',
-    'modele5' => 'E5',
+    'modele5' => 'اي 5',
     'electric_sedan' => 'سيارة سيدان كهربائية بتصميم صديق للبيئة',
-    'modelx7' => 'X7',
+    'modelx7' => 'اكس 7',
     'midsize_svu' => 'سيارة رياضية متعددة الاستخدامات متوسطة الحجم فاخرة بميزات فاخرة',
     'calculation_information' => 'معلومات حساب الاقساط',
     'total_car' => 'إجمالى سعر السيارة',

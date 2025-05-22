@@ -107,7 +107,7 @@
                         <div class="icon">
                             <img src="{{ asset('assets/img/icon/4.jpg') }}" alt="" class="d-block">
                         </div>
-                        <a href="#" class="stretched-link">
+                        <a href="{{ url('/' . ($page = 'service-booking')) }}" class="stretched-link">
                             <h3>{{ trans('home.Book_a_service') }}</h3>
                         </a>
                     </div>

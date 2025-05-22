@@ -44,9 +44,9 @@
         <p><strong>Phone:</strong> {{ $bookingData['phone'] }}</p>
         <p><strong>Car Model:</strong> 
             @php
-                $car = App\Models\Car::find($bookingData['car_id']);
+                $car = App\Models\Car::find($bookingData['car_model']);
                 $carName = json_decode($car->name, true);
-                echo $carName['en']; // أو $carName['ar'] إذا كنت تريد الاسم العربي
+                echo $carName['en'];
             @endphp
         </p>
         <p><strong>Date:</strong> {{ $bookingData['date'] }}</p>

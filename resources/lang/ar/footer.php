@@ -2,10 +2,10 @@
 
 return [
     'titlemodel' => 'تحقق من التشكيلة',
-    'Kaiyi3' => 'كايي X-3',
-    'Kaiyi3Pro' => 'كايي X-3 برو',
-    'KaiyiE5' => 'كايي E5',
-    'KaiyiX7' => 'كايي X7',
+    'Kaiyi3' => 'كايي اكس 3 ',
+    'Kaiyi3Pro' => 'كايي اكس 3 برو',
+    'KaiyiE5' => 'كايي اي 5',
+    'KaiyiX7' => 'كايي اكس 7',
     'titlebrand' => 'ماركة',
     'brand' => 'ماركة',
     'service_booking' => 'خدمة',

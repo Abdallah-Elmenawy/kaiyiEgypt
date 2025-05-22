@@ -79,10 +79,10 @@
                                     <div class="col-md-4 form-groupimg mb-4">
                                         <img src="{{ asset('assets/img/kia/models/Kaiyi-X3-Pro.png') }}" alt=""
                                             class="image-option img-thumbnail"
-                                            data-car-id="1"
+                                            data-car-id="3"
                                             onclick="selectImage(this)" />
                                         <div class="text-center mt-2">
-                                            <a href="#">X3 Pro</a>
+                                            <a href="#">X3</a>
                                             <p class="text-center">{{ trans('request-quote.compact_s_advanced') }}</p>
                                         </div>
                                     </div>
@@ -99,7 +99,7 @@
                                     <div class="col-md-4 form-groupimg mb-4">
                                         <img src="{{ asset('assets/img/kia/models/Kaiyi-X7.png') }}" alt=""
                                             class="image-option img-thumbnail"
-                                            data-car-id="3"
+                                            data-car-id="1"
                                             onclick="selectImage(this)" />
                                         <div class="text-center mt-2">
                                             <a href="#">X7</a>

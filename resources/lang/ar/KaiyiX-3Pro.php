@@ -1,7 +1,7 @@
 <?php
 
 return [
-    'title_page' => 'برو X-3 كايي',
+    'title_page' => 'كايي اكس 3 برو',
     'number' => '2632 :',
     'engin_capacity' => 'CC سعة محرك',
     'large' => 'كبير : ',

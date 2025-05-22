@@ -1,8 +1,8 @@
 <?php
 
 return [
-    'title_page' => 'E-5 كايي ',
-    'power_performance' => 'أداء الطاقة كايي E-5 ',
+    'title_page' => ' كايي اي 5 ',
+    'power_performance' => 'أداء الطاقة كايي اي 5  ',
     'power_combination' => '1.5T CVT مجموعة قوة',
     'max_power' => 'الحد الاقصى للطاقة 115 كيلو وات',
     'speed_analog' => '9- سرعات تناظرى CVT ناقل حركة ',

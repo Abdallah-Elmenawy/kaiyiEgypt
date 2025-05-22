@@ -48,7 +48,8 @@ class ServicBookingController extends Controller
             'date' => 'required|date',
             'number_plate' => 'required|string',
         ]);
-
+        $validated['car_model'] = $validated['car_id'];
+        unset($validated['car_id']);
         ServicBooking::create($validated);
         Mail::to('abdallahalielmenawy@gmail.com')->send(new ServiceBookingMail($validated));
         return redirect()->back()->with('success', __('service-booking.success_message'));

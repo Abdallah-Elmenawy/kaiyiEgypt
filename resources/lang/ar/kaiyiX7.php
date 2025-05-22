@@ -1,7 +1,7 @@
 <?php
 
 return [
-    'title_page' => ' X-7 كايي',
+    'title_page' => ' كايي اكس 7',
     'exterior_fashion' => 'Exterior Fashion More',
     'intelligent_cockpit' => 'قمرة القيادة المركزية',
     'floating_roof' => 'سقف عائم',

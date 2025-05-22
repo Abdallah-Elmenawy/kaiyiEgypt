@@ -97,7 +97,7 @@
 
                 <div class="col-lg-12 col-md-12" data-aos="fade-up" data-aos-delay="100">
                     <div class="feature-service">
-                        <h3><span>{{ trans('service-booking.service') }}</span> {{ trans('service-booking.center') }}</h3>
+                        <h3><span>{{ trans('service-booking.service_bottom') }}</span> {{ trans('service-booking.center') }}</h3>
                     </div>
                 </div><!-- End Feature -->
 
