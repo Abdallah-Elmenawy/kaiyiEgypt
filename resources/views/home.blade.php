@@ -51,13 +51,15 @@
         <div class="container text-center text-md-start py-5">
             <div class="content-wrapper">
                 <p class="lead-text">{{ trans('home.lead_text1') }}</p>
-                {{-- <h2 class="product-title">
-                    {{ trans('home.product_title1') }}<span> {{ trans('home.product_titleX7') }}</span>
-                </h2> --}}
                 <div class="button-group">
                     <a href="{{ url('/' . ($page = 'test-drive')) }}"
                         class="btn btn-primary">{{ trans('home.Book_Test_Drive') }}</a>
-                    <a href="{{ url('/' . ($page = 'test-drive')) }}" class="btn btn-light">{{ trans('home.Download_Specification') }}</a>
+                    <a href="{{ asset('assets/pdf/Kaiyi_X3_Pro.pdf') }}" target="_blank" class="btn btn-light">
+                        {{ trans('home.Download_Kaiyi_x3pro_details') }}
+                    </a>
+                    <a href="{{ asset('assets/pdf/Kaiyi_X7.pdf') }}" target="_blank" class="btn btn-light">
+                        {{ trans('home.Download_Kaiyi_x7_details') }}
+                    </a>
                 </div>
             </div>
         </div>
