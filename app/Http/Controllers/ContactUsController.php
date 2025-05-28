@@ -46,7 +46,7 @@ class ContactUsController extends Controller
         ]);
 
         ContactUs::create($validated);
-        Mail::to('abdallahalielmenawy@gmail.com')->send(new ContactUsMessage($validated));
+        Mail::to('info@kaiyimotorsegypt.com')->send(new ContactUsMessage($validated));
         return redirect()->back()->with('success', 'Your message has been sent successfully!');
     }
 

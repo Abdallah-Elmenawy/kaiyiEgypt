@@ -26,7 +26,7 @@ class BookingRequestController extends Controller
 
     BookingRequests::create($validated);
 
-    Mail::to('abdallahalielmenawy@gmail.com')->send(new BookingConfirmationMail($validated));
+    Mail::to('info@kaiyimotorsegypt.com')->send(new BookingConfirmationMail($validated));
 
     return back()->with('success', 'Your booking request has been submitted successfully!');
     }
