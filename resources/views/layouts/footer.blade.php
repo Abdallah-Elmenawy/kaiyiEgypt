@@ -7,7 +7,7 @@
             <div class="col-lg-2 col-md-2 footer-links">
                 <h4>{{ trans('footer.titlemodel') }}</h4>
                 <ul>
-                    <li><a href="{{ url('/' . $page='Kaiyi-X-3') }}">{{ trans('footer.Kaiyi3') }}</a></li>
+                    {{-- <li><a href="{{ url('/' . $page='Kaiyi-X-3') }}">{{ trans('footer.Kaiyi3') }}</a></li> --}}
                     <li><a href="{{ url('/' . $page='Kaiyi-X-3-Pro') }}">{{ trans('footer.Kaiyi3Pro') }}</a></li>
                     <li><a href="{{ url('/' . $page='Kaiyi-E-5') }}">{{ trans('footer.KaiyiE5') }}</a></li>
                     <li><a href="{{ url('/' . $page='Kaiyi-X-7') }}">{{ trans('footer.KaiyiX7') }}</a></li>

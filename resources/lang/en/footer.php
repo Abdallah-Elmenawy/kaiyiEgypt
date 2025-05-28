@@ -2,8 +2,8 @@
 
 return [
     'titlemodel' => 'Check out the line up',
-    'Kaiyi3' => 'Kaiyi X-3',
-    'Kaiyi3Pro' => 'Kaiyi X-3 pro',
+    'Kaiyi3' => 'Kaiyi X3',
+    'Kaiyi3Pro' => 'Kaiyi X3 pro',
     'KaiyiE5' => 'Kaiyi E5',
     'KaiyiX7' => 'Kaiyi X7',
     'titlebrand' => 'Brand',
@@ -13,7 +13,7 @@ return [
     'titleAbout' => 'About',
     'introduction' => 'Introduction',
     'SpeedDial' => 'Speed dial',
-    'address' => 'First Industrial Zone Street - October 40',
+    'address' => '40 First Industrial Zone Street - 6 October',
     'working' => 'Sunday~Saturday - 9:00 A.M To 7:00 P.M.',
     'phone' => '16434',
     'mail' => 'info@kaiyimotorsegypt.com',

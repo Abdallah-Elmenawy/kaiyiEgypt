@@ -13,7 +13,7 @@ return [
     'titleAbout' => 'عن',
     'introduction' => 'مقدمة',
     'SpeedDial' => 'صالة العرض',
-    'address' => 'شارع المنطقة الصناعية الأولى - 40 أكتوبر',
+    'address' => ' شارع 40 المنطقة الصناعية الأولى - 6 أكتوبر ',
     'working' => 'الاحد - السبت من الساعة 9:00 صباحاً الى 7:00 مساءً .',
     'phone' => '16434',
     'mail' => 'info@kaiyimotorsegypt.com',

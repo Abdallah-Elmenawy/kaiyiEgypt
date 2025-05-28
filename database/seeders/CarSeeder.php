@@ -18,20 +18,20 @@ class CarSeeder extends Seeder
     {
         $cars = [
             [
-                'en' => 'Kaiyi X-7',
+                'en' => 'Kaiyi X7',
                 'ar' => 'كايي اكس 7',
                 'image'=>'assets/img/kia/models/Kaiyi-X7.png',
                 'view' => 'KaiyiX-7'
             ],
             [
-                'en' => 'Kaiyi E-5',
+                'en' => 'Kaiyi E5',
                 'ar' => 'كايي اي 5',
                 'image'=>'assets/img/kia/models/Kaiyi-E5.png',
                 'view' => 'KaiyiE-5'
             ],
             [
-                'en' => 'Kaiyi X-3',
-                'ar' => 'كايي اكس 3',
+                'en' => 'kaiyi X3 pro',
+                'ar' => 'كايي اكس 3 برو',
                 'image'=>'assets/img/kia/models/Kaiyi-X3-Pro.png',
                 'view' => 'KaiyiX-3Pro'
             ],

@@ -80,7 +80,7 @@
                                             data-car-id="3"
                                             onclick="selectImage(this)" />
                                         <div class="text-center mt-2">
-                                            <a href="#">X3</a>
+                                            <a href="#">X3 pro</a>
                                             <p class="text-center">{{ trans('request-quote.compact_s_advanced') }}</p>
                                         </div>
                                     </div>

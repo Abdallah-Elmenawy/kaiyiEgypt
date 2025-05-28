@@ -42,11 +42,7 @@ Route::group(
 
             Route::get('/request-quote', function () {
                 return view('pages.request-quote');
-            })->name('request-quote');;
-
-            Route::get('/Kaiyi-X-3', function () {
-                return view('Models.KaiyiX-3');
-            });
+            })->name('request-quote');
 
             Route::get('/Kaiyi-X-3-Pro', function () {
                 return view('Models.KaiyiX-3Pro');
