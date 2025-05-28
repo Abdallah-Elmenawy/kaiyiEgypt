@@ -45,7 +45,7 @@ class InstallmentPaymentsController extends Controller
             'location' => 'required|string|max:255',
             'car_id' => 'required|exists:cars,id',
             'car_price' => 'required|numeric|min:0',
-            'months' => 'required|integer|min:1',
+            'years' => 'required|integer|min:1',
             'comment' => 'nullable|string',
         ]);
 

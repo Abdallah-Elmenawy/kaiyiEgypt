@@ -119,11 +119,13 @@
                                     
                                     <div class="col-md-6 form-group">
                                         <label for="months" class="form-label">{{ trans('request-quote.number_of_month') }}</label>
-                                        <select class="form-select" id="months" name="months" required>
+                                        <select class="form-select" id="years" name="years" required>
                                             <option value="" disabled selected>{{ trans('request-quote.enter_number_of_month') }}</option>
-                                            <option value="10">{{ trans('request-quote.tenmonth') }}</option>
-                                            <option value="20">{{ trans('request-quote.twomonth') }}</option>
-                                            <option value="30">{{ trans('request-quote.thrmonth') }}</option>
+                                            <option value="1">{{ trans('request-quote.oneyear') }}</option>
+                                            <option value="2">{{ trans('request-quote.twoyear') }}</option>
+                                            <option value="3">{{ trans('request-quote.thryear') }}</option>
+                                            <option value="4">{{ trans('request-quote.fouryear') }}</option>
+                                            <option value="5">{{ trans('request-quote.fifeyear') }}</option>
                                         </select>
                                     </div>
                                 </div>

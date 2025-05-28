@@ -21,7 +21,7 @@ return new class extends Migration
             $table->string('location');
             $table->foreignId('car_id')->constrained('cars')->onDelete('cascade');
             $table->decimal('car_price', 10, 2);
-            $table->integer('months');
+            $table->integer('years');
             $table->text('comment')->nullable();
             $table->timestamps();
         });

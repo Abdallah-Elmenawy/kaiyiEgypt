@@ -50,7 +50,7 @@
             @endphp
         </p>
         <p><strong>Car Price:</strong> {{ $bookingData['car_price'] }}</p>
-        <p><strong>Number of Months:</strong> {{ $bookingData['months'] }}</p>
+        <p><strong>Number of Years:</strong> {{ $bookingData['years'] }} Year</p>
         @if (!empty($bookingData['comment']))
             <p><strong>Additional Info:</strong> {{ $bookingData['comment'] }}</p>
         @endif
