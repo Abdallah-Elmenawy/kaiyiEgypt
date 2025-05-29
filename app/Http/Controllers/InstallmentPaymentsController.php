@@ -50,7 +50,8 @@ class InstallmentPaymentsController extends Controller
         ]);
 
         InstallmentPayments::create($validated);
-        Mail::to('info@kaiyimotorsegypt.com')->send(new InstallmentPaymentRequest($validated));
+        Mail::to('kaiyimotorsegypt@gmail.com')->send(new InstallmentPaymentRequest($validated));
+        session()->flash('Add', true);
         return redirect()->back()->with('success', 'Your quote request has been submitted successfully!');
     }
 

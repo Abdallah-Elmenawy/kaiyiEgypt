@@ -45,6 +45,13 @@
                     <!-- Form Section -->
                     <section id="comment-form" class="comment-form section">
                         <div class="container">
+                            @if (session()->has('Add'))
+                                <div class="alert alert-success alert-dismissible" role="alert">
+                                    <button type="button" class="btn-close" data-bs-dismiss="alert"></button>
+                                    <strong>{{ __('massage.Add') }}</strong>
+                                </div>
+                            @endif
+                            <br>
                             <form action="{{ route('installment.store') }}" method="POST">
                                 @csrf
 

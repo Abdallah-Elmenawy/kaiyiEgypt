@@ -25,8 +25,6 @@
             <div class="section-header text-center">
                 <h2>{{ trans('contact-us.get_touch') }}</h2>
             </div>
-
-
         </div>
     </section>
     <!-- /Features Section -->
@@ -79,6 +77,13 @@
                 </div>
 
                 <div class="col-lg-8">
+                    @if (session()->has('Add'))
+                        <div class="alert alert-success alert-dismissible" role="alert">
+                            <button type="button" class="btn-close" data-bs-dismiss="alert"></button>
+                            <strong>{{ __('massage.Add') }}</strong>
+                        </div>
+                    @endif
+                    <br>
                     <form action="{{ route('contact-us.store') }}" method="POST" role="form" class="email-form">
                         @csrf
                         <div class="row">

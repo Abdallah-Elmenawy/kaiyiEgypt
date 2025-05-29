@@ -51,7 +51,8 @@ class ServicBookingController extends Controller
         $validated['car_model'] = $validated['car_id'];
         unset($validated['car_id']);
         ServicBooking::create($validated);
-        Mail::to('info@kaiyimotorsegypt.com')->send(new ServiceBookingMail($validated));
+        Mail::to('kaiyimotorsegypt@gmail.com')->send(new ServiceBookingMail($validated));
+        session()->flash('Add', true);
         return redirect()->back()->with('success', __('service-booking.success_message'));
     }
 

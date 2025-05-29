@@ -31,14 +31,22 @@
     <!-- /Service Booking Section -->
     <!-- Service Form Section -->
     <section id="service-booking" class="service-booking section">
-
+        
         <div class="container">
+
             <div class="row gy-4">
                 <div class="col-lg-4" data-aos="fade-right" data-aos-delay="200">
                     <img src="{{ asset('assets/img/kia/car.jpg') }}" alt="" class="img-fluid services-img">
                 </div><!-- End Feature -->
 
                 <div class="col-lg-8 col-md-12" data-aos="fade-up" data-aos-delay="300">
+                    @if (session()->has('Add'))
+                        <div class="alert alert-success alert-dismissible" role="alert">
+                            <button type="button" class="btn-close" data-bs-dismiss="alert"></button>
+                            <strong>{{ __('massage.Add') }}</strong>
+                        </div>
+                    @endif
+                    <br>
                     <form action="{{ route('servic-booking.store') }}" method="POST" class="email-form">
                         @csrf
                         <div class="row">
